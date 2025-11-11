@@ -19,11 +19,11 @@ export default function GPUaaS() {
               </a>
             </Link>
             <div className="hidden md:flex items-center gap-8">
+              <Link href="/"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a></Link>
               <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
               <Link href="/gpuaas"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">GPUaaS</a></Link>
               <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">AI Hub</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
-              
             </div>
             <Button size="sm" asChild>
               <a href="mailto:info@exorax.com">Contact Us</a>

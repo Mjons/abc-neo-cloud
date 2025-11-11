@@ -19,9 +19,10 @@ export default function Home() {
               </a>
             </Link>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#platform" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Platform</a>
-              <a href="#infrastructure" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a>
-              <a href="#market" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Market</a>
+              <Link href="/"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">Home</a></Link>
+              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
+              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">AI Hub</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button asChild>
@@ -338,7 +339,7 @@ export default function Home() {
                   <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
                     <img src="/assets/icon_arrows.png" alt="" className="w-10 h-10" />
                   </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.3</CardTitle>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.30</CardTitle>
                   <CardDescription className="text-base">PUE Rating</CardDescription>
                 </CardHeader>
                 <CardContent>
