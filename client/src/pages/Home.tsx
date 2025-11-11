@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Zap, Server, Cloud, CheckCircle2, TrendingUp } from "lucide-react";
+import { ArrowRight, Zap, Server, Cloud, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
                 <a href="#platform">
-                  Explore Platform <ArrowRight className="ml-2 w-5 h-5" />
+                  Schedule a Call <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-base px-8" asChild>
@@ -73,20 +73,20 @@ export default function Home() {
             </div>
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <div className="text-3xl font-bold text-primary">45MW</div>
-                <div className="text-sm text-muted-foreground">Power Capacity</div>
+                <div className="text-3xl font-bold text-primary">150MW</div>
+                <div className="text-sm text-muted-foreground">Current power Capacity</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary">100kW</div>
                 <div className="text-sm text-muted-foreground">Rack Density</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">1.12</div>
+                <div className="text-3xl font-bold text-primary">1.30</div>
                 <div className="text-sm text-muted-foreground">PUE Rating</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">$100M</div>
-                <div className="text-sm text-muted-foreground">2028 Target ARR</div>
+                <div className="text-3xl font-bold text-primary">500MW</div>
+                <div className="text-sm text-muted-foreground">2026 power capacity</div>
               </div>
             </div>
           </div>
@@ -98,8 +98,8 @@ export default function Home() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Flexible Three-Tier Model</h2>
-              <p className="text-muted-foreground text-lg">Choose your level of control - from pure infrastructure to fully managed AI platform</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Transparent Pricing</h2>
+              <p className="text-muted-foreground text-lg">Choose your level of control - from AI factory to AI solutions</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -119,8 +119,8 @@ export default function Home() {
                     <img src="/assets/icon_serverStack.png" alt="" className="w-8 h-8" />
                     <Badge variant="secondary">INFRASTRUCTURE</Badge>
                   </div>
-                  <CardTitle className="text-2xl">Hyperscale Infrastructure</CardTitle>
-                  <CardDescription>Bring Your Own Cloud</CardDescription>
+                  <CardTitle className="text-2xl">AI Factory</CardTitle>
+                  <CardDescription>Own Your Own Neocloud</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-3">
@@ -147,7 +147,7 @@ export default function Home() {
                   </div>
                   <div className="pt-4 border-t border-border">
                     <div className="text-2xl font-bold text-foreground">Custom Pricing</div>
-                    <div className="text-xs text-muted-foreground mt-1">3-10 year contracts • Multi-year agreements</div>
+                    <div className="text-xs text-muted-foreground mt-1">5-10 year contracts • Multi-year agreements</div>
                   </div>
                 </CardContent>
               </Card>
@@ -200,8 +200,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <div className="text-2xl font-bold text-foreground">On-Demand Pricing</div>
-                    <div className="text-xs text-muted-foreground mt-1">Usage-based billing • Instant deployment</div>
+                    <Button className="w-full" size="lg" asChild>
+                      <a href="mailto:info@exorax.com">Pricing</a>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -252,46 +253,6 @@ export default function Home() {
                     <div className="text-2xl font-bold text-foreground">Premium Pricing</div>
                     <div className="text-xs text-muted-foreground mt-1">Full-stack platform • Recurring SaaS revenue</div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Blended Economics */}
-            <div className="mt-12 grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              <Card className="bg-gradient-to-br from-cyan-500/5 to-blue-500/5 border-cyan-500/20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-20 h-20 opacity-10">
-                  <svg viewBox="0 0 50 50" className="w-full h-full">
-                    <circle cx="40" cy="10" r="1.5" fill="currentColor" className="text-cyan-400" />
-                    <circle cx="35" cy="15" r="1" fill="currentColor" className="text-cyan-400" />
-                  </svg>
-                </div>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">55-65%</div>
-                  <div className="text-sm text-muted-foreground">Blended Gross Margin</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-gradient-to-br from-blue-500/5 to-purple-500/5 border-blue-500/20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-20 h-20 opacity-10">
-                  <svg viewBox="0 0 50 50" className="w-full h-full">
-                    <circle cx="40" cy="10" r="1.5" fill="currentColor" className="text-blue-400" />
-                    <circle cx="35" cy="15" r="1" fill="currentColor" className="text-purple-400" />
-                  </svg>
-                </div>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground">Renewable Energy</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-gradient-to-br from-purple-500/5 to-cyan-500/5 border-purple-500/20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-20 h-20 opacity-10">
-                  <svg viewBox="0 0 50 50" className="w-full h-full">
-                    <circle cx="40" cy="10" r="1.5" fill="currentColor" className="text-purple-400" />
-                    <circle cx="35" cy="15" r="1" fill="currentColor" className="text-cyan-400" />
-                  </svg>
-                </div>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">90 Days</div>
-                  <div className="text-sm text-muted-foreground">Deployment Speed</div>
                 </CardContent>
               </Card>
             </div>
@@ -383,228 +344,6 @@ export default function Home() {
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
                     38% lower operating costs vs traditional facilities. 100% renewable energy.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Market Opportunity */}
-      <section id="market" className="py-20 relative">
-        {/* Background image */}
-        <div className="absolute inset-0 opacity-10">
-          <img
-            src="/assets/areal view data center.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-        </div>
-        <div className="container relative">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Market Opportunity</h2>
-              <p className="text-muted-foreground text-lg">Massive, supply-constrained market with winner-take-most dynamics</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 relative overflow-hidden">
-                {/* Cloud wave pattern */}
-                <div className="absolute bottom-0 right-0 w-40 h-40 opacity-10">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <path d="M30,80 Q40,60 60,70 T90,80" stroke="currentColor" fill="none" strokeWidth="3" className="text-cyan-400" />
-                    <path d="M20,90 Q35,70 55,80 T85,90" stroke="currentColor" fill="none" strokeWidth="3" className="text-blue-400" />
-                  </svg>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">$100B+</CardTitle>
-                  <CardDescription className="text-lg text-foreground">AI Infrastructure Market 2028</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    30%+ CAGR. Supply constraints expected to persist for years, creating significant market opportunity.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-purple-500/20 relative overflow-hidden">
-                {/* Cloud wave pattern */}
-                <div className="absolute bottom-0 right-0 w-40 h-40 opacity-10">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <path d="M30,80 Q40,60 60,70 T90,80" stroke="currentColor" fill="none" strokeWidth="3" className="text-blue-400" />
-                    <path d="M20,90 Q35,70 55,80 T85,90" stroke="currentColor" fill="none" strokeWidth="3" className="text-purple-400" />
-                  </svg>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">2GW+</CardTitle>
-                  <CardDescription className="text-lg text-foreground">Demand Gap in Priority Markets</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Hyperscale capacity shortage exceeding 2GW in strategic regions creates immediate revenue opportunity.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Launch Strategy Timeline */}
-            <div>
-              <h3 className="text-2xl font-bold mb-8 text-center">Launch Strategy</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <Badge className="w-fit mb-2">Year One</Badge>
-                    <CardTitle>Infrastructure Launch</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Deploy flagship data centres in high-demand regions
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-primary" />
-                      <span className="font-semibold text-primary">Target $10M ARR</span>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <Badge className="w-fit mb-2">Year Two</Badge>
-                    <CardTitle>GPUaaS Expansion</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Scale GPU fleet and customer base
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-primary" />
-                      <span className="font-semibold text-primary">Target $25M ARR</span>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <Badge className="w-fit mb-2">Year Three</Badge>
-                    <CardTitle>Platform Maturity</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Full three-tier platform operational
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-primary" />
-                      <span className="font-semibold text-primary">Target $50M ARR</span>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Competitive Positioning */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Competitive Positioning</h2>
-              <p className="text-muted-foreground text-lg">Unique advantages across infrastructure, cost, and platform</p>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Capability</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXOAI Neo</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Legacy Cloud</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">GPU Broker</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Colo Provider</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Infrastructure Ownership</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Yes</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">No</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">No</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Yes</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">GPUaaS</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Yes</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Partial</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Yes</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">No</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">AI Platform</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Yes</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Partial</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">No</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">No</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Sustainability</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">High</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Medium</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Low</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Medium</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Moat Strength</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Asset + Platform</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Scale</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Network</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Asset</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-cyan-500/10 rounded-lg">
-                    <img src="/assets/icon_shield.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Hard Asset Moat</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    24+ month lead time to replicate infrastructure. Secured power and land rights in key markets.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-blue-500/10 rounded-lg">
-                    <img src="/assets/icon_arrows.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Cost Advantage</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    42% lower TCO vs hyperscalers through ownership economics and energy efficiency.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-purple-500/10 rounded-lg">
-                    <img src="/assets/icon_networkConnection.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Platform Network Effect</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Customer lock-in via unified platform, proprietary orchestration, and data gravity.
                   </p>
                 </CardContent>
               </Card>
