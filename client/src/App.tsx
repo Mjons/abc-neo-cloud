@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Infrastructure from "./pages/Infrastructure";
 import GPUaaS from "./pages/GPUaaS";
 import AIHub from "./pages/AIHub";
+import About from "./pages/About";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path={"/infrastructure"} component={Infrastructure} />
       <Route path={"/gpuaas"} component={GPUaaS} />
       <Route path={"/aihub"} component={AIHub} />
+      <Route path={"/about"} component={About} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

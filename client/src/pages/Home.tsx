@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Zap, Server, Cloud, CheckCircle2, TrendingUp, Users, Mail } from "lucide-react";
+import { ArrowRight, Zap, Server, Cloud, CheckCircle2, TrendingUp } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Home() {
   return (
@@ -10,25 +11,21 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-3">
-              <img
-                src="/assets/logo_icon.png"
-                alt="EXOAI"
-                className="h-8 w-8"
-              />
-              <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                EXOAI
-              </span>
-            </div>
+            <Link href="/">
+              <a className="cursor-pointer">
+                <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                  EXORAX
+                </span>
+              </a>
+            </Link>
             <div className="hidden md:flex items-center gap-8">
               <a href="#platform" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Platform</a>
               <a href="#infrastructure" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a>
               <a href="#market" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Market</a>
-              <a href="#team" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Team</a>
-              <a href="#investment" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Investment</a>
+              <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button asChild>
-              <a href="#investment">Contact Us</a>
+              <a href="mailto:info@exorax.com">Contact Us</a>
             </Button>
           </div>
         </div>
@@ -56,9 +53,6 @@ export default function Home() {
         
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 text-sm px-4 py-1.5" variant="secondary">
-              Series A Investment Opportunity • $50M Raise
-            </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Infrastructure-First
               <br />
@@ -71,12 +65,12 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
-                <a href="#investment">
-                  View Investment Opportunity <ArrowRight className="ml-2 w-5 h-5" />
+                <a href="#platform">
+                  Explore Platform <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-base px-8" asChild>
-                <a href="#platform">Explore Platform</a>
+                <Link href="/about"><a>About Us</a></Link>
               </Button>
             </div>
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -675,284 +669,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team */}
-      <section id="team" className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Founding Team</h2>
-              <p className="text-muted-foreground text-lg">Proven expertise in infrastructure, AI, and finance</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle>Alex Morgan</CardTitle>
-                  <CardDescription className="text-primary font-semibold">CEO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Former Head of Cloud Engineering at leading hyperscaler. 15+ years in data centre innovation.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle>Priya Singh</CardTitle>
-                  <CardDescription className="text-primary font-semibold">CTO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    AI systems architect, ex-GPU platform lead at global chipmaker. Holds multiple infrastructure patents.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle>Daniel Kim</CardTitle>
-                  <CardDescription className="text-primary font-semibold">COO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Serial entrepreneur, scaled two SaaS companies from seed to exit. Expert in operational scaling.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Financial Projections */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Financial Projections</h2>
-              <p className="text-muted-foreground text-lg">Strong growth trajectory with improving margins</p>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Metric</th>
-                    <th className="text-center py-4 px-4 text-sm font-semibold text-muted-foreground">2025</th>
-                    <th className="text-center py-4 px-4 text-sm font-semibold text-muted-foreground">2026</th>
-                    <th className="text-center py-4 px-4 text-sm font-semibold text-muted-foreground">2027</th>
-                    <th className="text-center py-4 px-4 text-sm font-semibold text-muted-foreground">2028</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm font-medium">ARR</td>
-                    <td className="py-4 px-4 text-sm text-center">$10M</td>
-                    <td className="py-4 px-4 text-sm text-center font-semibold text-primary">$25M</td>
-                    <td className="py-4 px-4 text-sm text-center">$50M</td>
-                    <td className="py-4 px-4 text-sm text-center">$100M</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm font-medium">Utilization</td>
-                    <td className="py-4 px-4 text-sm text-center">35%</td>
-                    <td className="py-4 px-4 text-sm text-center">50%</td>
-                    <td className="py-4 px-4 text-sm text-center">70%</td>
-                    <td className="py-4 px-4 text-sm text-center">85%</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm font-medium">Gross Margin</td>
-                    <td className="py-4 px-4 text-sm text-center">55%</td>
-                    <td className="py-4 px-4 text-sm text-center">60%</td>
-                    <td className="py-4 px-4 text-sm text-center">65%</td>
-                    <td className="py-4 px-4 text-sm text-center">65%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Investment Opportunity */}
-      <section id="investment" className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-background to-purple-500/20" />
-        {/* Larger cloud wave patterns for investment section */}
-        <div className="absolute top-10 right-10 w-64 h-64 opacity-5">
-          <svg viewBox="0 0 200 200" className="w-full h-full">
-            <path d="M40,100 Q60,60 100,80 T160,100" stroke="currentColor" fill="none" strokeWidth="4" className="text-cyan-400" />
-            <path d="M40,120 Q60,80 100,100 T160,120" stroke="currentColor" fill="none" strokeWidth="4" className="text-blue-400" />
-            <path d="M40,140 Q60,100 100,120 T160,140" stroke="currentColor" fill="none" strokeWidth="4" className="text-purple-400" />
-            <circle cx="140" cy="110" r="3" fill="currentColor" className="text-cyan-400" />
-            <circle cx="150" cy="130" r="2" fill="currentColor" className="text-purple-400" />
-            <circle cx="130" cy="125" r="2.5" fill="currentColor" className="text-blue-400" />
-          </svg>
-        </div>
-        <div className="container relative">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge className="mb-4 text-base px-6 py-2" variant="secondary">
-                Investment Opportunity
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Join the AI Infrastructure Revolution</h2>
-              <p className="text-xl text-muted-foreground">
-                Series A funding to accelerate growth and capture market leadership
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <CardTitle className="text-lg text-muted-foreground">Raise Amount</CardTitle>
-                  <div className="text-4xl font-bold text-primary mt-2">$50M</div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">Series A funding round</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <CardTitle className="text-lg text-muted-foreground">Pre-Money Valuation</CardTitle>
-                  <div className="text-4xl font-bold text-primary mt-2">$200M</div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">Clear path to profitability in 3 years</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <Card className="bg-card border-border mb-12">
-              <CardHeader>
-                <CardTitle>Use of Funds</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div className="flex-1">
-                      <div className="text-sm font-medium mb-1">Expand Infrastructure & Data Centre Capacity</div>
-                      <div className="text-xs text-muted-foreground">Deploy in priority markets, secure additional power capacity</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div className="flex-1">
-                      <div className="text-sm font-medium mb-1">Accelerate Product Development</div>
-                      <div className="text-xs text-muted-foreground">Platform enhancements, GPUaaS scaling, AIOS features</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div className="flex-1">
-                      <div className="text-sm font-medium mb-1">Drive Customer Acquisition</div>
-                      <div className="text-xs text-muted-foreground">Partnership initiatives, direct sales team expansion</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div className="flex-1">
-                      <div className="text-sm font-medium mb-1">Support Operational Scaling</div>
-                      <div className="text-xs text-muted-foreground">Working capital for business growth and key milestones</div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border mb-12">
-              <CardHeader>
-                <CardTitle>18-Month Milestones</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Achieve $50M ARR by year three</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Reach profitability within three years</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Deploy data centres across high-demand regions</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Establish market leadership in AI infrastructure</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="text-center">
-              <Button size="lg" className="text-lg px-12 py-6 h-auto" asChild>
-                <a href="mailto:investors@exoaineocloud.com">
-                  <Mail className="mr-2 w-5 h-5" />
-                  Contact Investment Team
-                </a>
-              </Button>
-              <p className="text-sm text-muted-foreground mt-4">investors@exoaineocloud.com</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-12 border-t border-border bg-card/30">
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
-                <div className="flex items-center gap-2 mb-4">
-                  <img
-                    src="/assets/logo_white.png"
-                    alt="EXOAI Neo Cloud"
-                    className="h-12 w-auto"
-                  />
+                <div className="mb-4">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    EXORAX
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
                   Infrastructure-First AI Computing Platform
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Power • Cooling • Compute • Platform
-                </p>
               </div>
-              
+
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#platform" className="hover:text-foreground transition-colors">Infrastructure</a></li>
-                  <li><a href="#platform" className="hover:text-foreground transition-colors">GPU as a Service</a></li>
-                  <li><a href="#platform" className="hover:text-foreground transition-colors">AI Hub Platform</a></li>
+                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
+                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">AI Hub</a></Link></li>
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="font-semibold mb-4">Company</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#team" className="hover:text-foreground transition-colors">Team</a></li>
-                  <li><a href="#investment" className="hover:text-foreground transition-colors">Investors</a></li>
-                  <li><a href="mailto:investors@exoaineocloud.com" className="hover:text-foreground transition-colors">Contact</a></li>
+                  <li><Link href="/about"><a className="hover:text-foreground transition-colors">About Us</a></Link></li>
+                  <li><a href="mailto:info@exorax.com" className="hover:text-foreground transition-colors">Contact</a></li>
                 </ul>
               </div>
             </div>
-            
+
             <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-              <p>© 2025 EXOAI Neo Cloud. All rights reserved.</p>
+              <p>© 2025 EXORAX. All rights reserved.</p>
             </div>
           </div>
         </div>

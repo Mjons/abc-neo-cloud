@@ -12,14 +12,9 @@ export default function AIHub() {
         <div className="container mx-auto">
           <div className="flex items-center justify-between h-16">
             <Link href="/">
-              <a className="flex items-center gap-3 cursor-pointer">
-                <img
-                  src="/assets/logo_icon.png"
-                  alt="EXOAI"
-                  className="h-8 w-8"
-                />
-                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                  EXOAI
+              <a className="cursor-pointer">
+                <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                  EXORAX
                 </span>
               </a>
             </Link>
@@ -27,10 +22,11 @@ export default function AIHub() {
               <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
               <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
               <Link href="/aihub"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">AI Hub</a></Link>
-              <Link href="/#investment"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Investment</a></Link>
+              <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
+              
             </div>
             <Button size="sm" asChild>
-              <a href="mailto:investors@exoaineocloud.com">Contact Us</a>
+              <a href="mailto:info@exorax.com">Contact Us</a>
             </Button>
           </div>
         </div>
@@ -56,10 +52,10 @@ export default function AIHub() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
-                <a href="mailto:investors@exoaineocloud.com">Request Demo</a>
+                <a href="mailto:info@exorax.com">Request Demo</a>
               </Button>
               <Button size="lg" variant="outline" className="text-base px-8" asChild>
-                <Link href="/#investment"><a>View Investment Opportunity</a></Link>
+                
               </Button>
             </div>
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -92,7 +88,7 @@ export default function AIHub() {
             <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-4">
-                  By offering a unified solution for the entire machine learning lifecycle, EXOAI AI Hub enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
+                  By offering a unified solution for the entire machine learning lifecycle, EXORAX AI Hub enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center gap-2">
@@ -618,7 +614,7 @@ export default function AIHub() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXOAI AI Hub</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXORAX AI Hub</h2>
               <p className="text-muted-foreground text-lg">End-to-end lifecycle coverage with enterprise-grade governance</p>
             </div>
 
@@ -627,7 +623,7 @@ export default function AIHub() {
                 <thead>
                   <tr className="border-b border-border">
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Capability</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXOAI AI Hub</th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXORAX AI Hub</th>
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Competitor A</th>
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Competitor B</th>
                   </tr>
@@ -771,16 +767,16 @@ export default function AIHub() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-12 py-6 h-auto" asChild>
-                <a href="mailto:investors@exoaineocloud.com">
+                <a href="mailto:info@exorax.com">
                   <Mail className="mr-2 w-5 h-5" />
                   Request Demo
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-12 py-6 h-auto" asChild>
-                <Link href="/#investment"><a>View Investment Details</a></Link>
+                
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground mt-6">investors@exoaineocloud.com</p>
+            <p className="text-sm text-muted-foreground mt-6">info@exorax.com</p>
           </div>
         </div>
       </section>
@@ -794,7 +790,7 @@ export default function AIHub() {
                 <div className="flex items-center gap-2 mb-4">
                   <img
                     src="/assets/logo_white.png"
-                    alt="EXOAI Neo Cloud"
+                    alt="EXORAX Neo Cloud"
                     className="h-12 w-auto"
                   />
                 </div>
@@ -807,20 +803,20 @@ export default function AIHub() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
                   <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">AI Hub</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">AI Hub</a></Link>
+              <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link></li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Company</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><Link href="/#team"><a className="hover:text-foreground transition-colors">Team</a></Link></li>
-                  <li><Link href="/#investment"><a className="hover:text-foreground transition-colors">Investors</a></Link></li>
-                  <li><a href="mailto:investors@exoaineocloud.com" className="hover:text-foreground transition-colors">Contact</a></li>
+                  
+                  <li><Link href="/about"><a className="hover:text-foreground transition-colors">About Us</a></Link></li><li><a href="mailto:info@exorax.com" className="hover:text-foreground transition-colors">Contact</a></li>
                 </ul>
               </div>
             </div>
             <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-              <p>© 2025 EXOAI Neo Cloud. All rights reserved.</p>
+              <p>© 2025 EXORAX. All rights reserved.</p>
             </div>
           </div>
         </div>
