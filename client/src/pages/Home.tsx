@@ -93,60 +93,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Problem Statement */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">The AI Infrastructure Bottleneck</h2>
-            <p className="text-muted-foreground text-center mb-12">Critical challenges limiting AI innovation and deployment</p>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_chip.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Critical Power Shortage</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Demand for AI compute exceeds supply, with persistent GPU shortages. Current data centre capacity falls short by over 40% in key markets, with 18-24 month deployment delays.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_power.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Power & Cooling Capital Trap</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Data centre power and cooling limitations create a "capital trap," stalling new AI deployments and limiting access to transformative technologies.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_networkConnection.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Vendor Fragmentation</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Fragmented vendor landscape leads to inefficient resource utilization, project delays, and up to 60% higher operational overhead for enterprises.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Three-Tier Platform */}
       <section id="platform" className="py-20">
         <div className="container">
@@ -173,8 +119,8 @@ export default function Home() {
                     <img src="/assets/icon_serverStack.png" alt="" className="w-8 h-8" />
                     <Badge variant="secondary">INFRASTRUCTURE</Badge>
                   </div>
-                  <CardTitle className="text-2xl">Power + Space</CardTitle>
-                  <CardDescription>Bring Your Own Hardware</CardDescription>
+                  <CardTitle className="text-2xl">Hyperscale Infrastructure</CardTitle>
+                  <CardDescription>Bring Your Own Cloud</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-3">
