@@ -342,33 +342,7 @@ export default function AIHub() {
               <p className="text-muted-foreground text-lg">Rapidly growing market driven by AI adoption and operational needs</p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">$15B</CardTitle>
-                  <CardDescription className="text-lg text-foreground">Global MLOps Market by 2027</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    Expected to grow at a CAGR of 39%, driven by widespread AI adoption and increasing demand for scalable, secure ML infrastructure.
-                  </p>
-                  <div className="text-sm font-semibold text-primary">39% CAGR through 2027</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-purple-500/20">
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">70%</CardTitle>
-                  <CardDescription className="text-lg text-foreground">AI Project Failure Rate</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    Enterprises prioritize operational efficiency and governance, creating sustained demand for comprehensive MLOps solutions.
-                  </p>
-                  <div className="text-sm font-semibold text-primary">Massive value creation opportunity</div>
-                </CardContent>
-              </Card>
-            </div>
+         
 
             <div>
               <h3 className="text-2xl font-bold mb-8 text-center">Growth Drivers</h3>
@@ -516,30 +490,7 @@ export default function AIHub() {
               </Card>
             </div>
 
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
-              <CardHeader>
-                <CardTitle className="text-2xl">Financial Projections</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-2">Annual Recurring Revenue</div>
-                    <div className="text-4xl font-bold text-primary mb-1">$50M+</div>
-                    <div className="text-sm text-muted-foreground">Projected by 2027</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-2">Customer Growth CAGR</div>
-                    <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-1">35%</div>
-                    <div className="text-sm text-muted-foreground">Next three years</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-2">Gross Margins</div>
-                    <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-1">&gt;60%</div>
-                    <div className="text-sm text-muted-foreground">Operational efficiency</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </section>
@@ -549,7 +500,7 @@ export default function AIHub() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Target Customers</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">We serve</h2>
               <p className="text-muted-foreground text-lg">Serving organizations at the forefront of AI innovation</p>
             </div>
 
@@ -687,75 +638,7 @@ export default function AIHub() {
         </div>
       </section>
 
-      {/* Growth Strategy */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Growth Strategy</h2>
-              <p className="text-muted-foreground text-lg">Multi-channel approach driving adoption and expansion</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <TrendingUp className="w-5 h-5 text-primary" />
-                    <CardTitle>Product-Led Growth</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Continuous platform enhancements to drive user adoption and engagement through superior developer experience.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <TrendingUp className="w-5 h-5 text-primary" />
-                    <CardTitle>Enterprise Sales</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Dedicated sales teams targeting key verticals and strategic accounts with customized solutions and support.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <TrendingUp className="w-5 h-5 text-primary" />
-                    <CardTitle>Partnerships</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Collaboration with cloud providers, system integrators, and technology partners to expand market reach.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <TrendingUp className="w-5 h-5 text-primary" />
-                    <CardTitle>Customer Journey</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    High-touch onboarding, comprehensive support, and community-driven engagement ensuring customer success.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-cyan-500/20 via-background to-purple-500/20">

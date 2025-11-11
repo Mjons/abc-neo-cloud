@@ -377,8 +377,8 @@ export default function Infrastructure() {
                   <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
                     <img src="/assets/icon_power.png" alt="" className="w-10 h-10" />
                   </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">45MW</CardTitle>
-                  <CardDescription className="text-base">Total Power Capacity</CardDescription>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">150MW</CardTitle>
+                  <CardDescription className="text-base">Current Power Capacity</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
@@ -407,7 +407,7 @@ export default function Infrastructure() {
                   <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
                     <img src="/assets/icon_arrows.png" alt="" className="w-10 h-10" />
                   </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.12</CardTitle>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.30</CardTitle>
                   <CardDescription className="text-base">PUE Rating</CardDescription>
                 </CardHeader>
                 <CardContent>

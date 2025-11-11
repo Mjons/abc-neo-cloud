@@ -67,10 +67,6 @@ export default function GPUaaS() {
                 <div className="text-3xl font-bold text-primary">Flexible</div>
                 <div className="text-sm text-muted-foreground">Usage-Based Pricing</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">$50M+</div>
-                <div className="text-sm text-muted-foreground">2027 ARR Target</div>
-              </div>
             </div>
           </div>
         </div>
@@ -500,107 +496,12 @@ export default function GPUaaS() {
               </Card>
             </div>
 
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
-              <CardHeader>
-                <CardTitle className="text-2xl">Financial Projections</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-2">Annual Recurring Revenue</div>
-                    <div className="text-4xl font-bold text-primary mb-1">$50M+</div>
-                    <div className="text-sm text-muted-foreground">Projected by 2027</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-2">Customer Growth CAGR</div>
-                    <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-1">35%</div>
-                    <div className="text-sm text-muted-foreground">Next three years</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-2">Gross Margins</div>
-                    <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-1">&gt;60%</div>
-                    <div className="text-sm text-muted-foreground">Operational efficiency</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
           </div>
         </div>
       </section>
 
-      {/* Go-to-Market Strategy */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Go-to-Market Strategy</h2>
-              <p className="text-muted-foreground text-lg">Multi-channel approach targeting enterprise and developer segments</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-cyan-500/10 rounded-lg">
-                    <img src="/assets/icon_networkConnection.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Direct Sales</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Dedicated sales teams targeting large enterprises and hyperscale clients with customized solutions.
-                  </p>
-                  <div className="text-sm font-semibold text-primary">Focus: Enterprise & Hyperscale</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-blue-500/10 rounded-lg">
-                    <img src="/assets/icon_cloudTransfer.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Strategic Partnerships</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Collaborations with cloud service providers, system integrators, and AI solution vendors.
-                  </p>
-                  <div className="text-sm font-semibold text-primary">Focus: Channel & Ecosystem</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-purple-500/10 rounded-lg">
-                    <img src="/assets/icon_chip.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Marketing Initiatives</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Industry events, digital campaigns, technical content, and community engagement programs.
-                  </p>
-                  <div className="text-sm font-semibold text-primary">Focus: Brand & Community</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-14 h-14 mb-3 flex items-center justify-center bg-cyan-500/10 rounded-lg">
-                    <img src="/assets/icon_arrows.png" alt="" className="w-9 h-9" />
-                  </div>
-                  <CardTitle>Developer Platform</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Self-service portal, comprehensive documentation, and support for fast-growing AI developer segment.
-                  </p>
-                  <div className="text-sm font-semibold text-primary">Focus: Developer Experience</div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-cyan-500/20 via-background to-purple-500/20">
