@@ -54,10 +54,8 @@ export default function Home() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Infrastructure-First
-              <br />
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                AI Computing Platform
+                AI Native Neo Cloud Platform
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

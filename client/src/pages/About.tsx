@@ -41,14 +41,219 @@ export default function About() {
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Building the Future
+                Exponential
               </span>
               <br />
-              of AI Infrastructure
+              Organizations Inc.
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Led by a team of proven experts in infrastructure, AI, and finance, we're revolutionizing how organizations deploy and scale AI workloads.
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              A neocloud provider exiting stealth mode, enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Overview */}
+      <section className="py-20 bg-card/50">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
+              <CardContent className="pt-8 pb-8">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  <strong className="text-foreground">Exponential Organizations Inc. ("ExO")</strong> is a neocloud provider exiting stealth mode, enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Led by executives with multiple 8-11 figure outcomes and supported by <strong className="text-primary">500+ engineers</strong> plus <strong className="text-primary">40,000 domain expert community</strong>, ExO builds upon successes of its eponymous 1M+ bestseller with proprietary IP for <strong className="text-primary">3x better revenue growth</strong>, <strong className="text-primary">6.8x greater profitability</strong>, <strong className="text-primary">40x higher shareholder returns</strong>, and <strong className="text-primary">11.7x higher asset utilization</strong>, across 300+ F500 engagements.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Showcase */}
+      <section className="py-20">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+              <p className="text-muted-foreground text-lg">300+ Fortune 500 engagements across diverse industries</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Accenture</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Airbnb</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Allianz</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Amazon</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Bank of America</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Coca Cola</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">IBM</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">KPMG</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">P&G</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Samsung</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Siemens Energy</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">SpaceX</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Tesla</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">Qualcomm</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-card border-border">
+                <CardContent className="pt-6">
+                  <p className="font-semibold">VISA</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Global Reach */}
+      <section className="py-20 bg-card/50">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Global Presence</h2>
+              <p className="text-muted-foreground text-lg">Worldwide reach with local expertise</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
+                <CardHeader>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">150+</CardTitle>
+                  <CardDescription className="text-base text-foreground">Countries</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    ExO affiliates active across six continents, serving enterprises worldwide.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/20">
+                <CardHeader>
+                  <CardTitle className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2">57</CardTitle>
+                  <CardDescription className="text-base text-foreground">Languages</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Multilingual support enabling seamless global collaboration and knowledge transfer.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
+                <CardHeader>
+                  <CardTitle className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">40K+</CardTitle>
+                  <CardDescription className="text-base text-foreground">Domain Experts</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Extensive community of specialized professionals across diverse industries.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Affiliates */}
+      <section className="py-20">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">ExO Affiliates</h2>
+              <p className="text-muted-foreground text-lg">Building a comprehensive ecosystem for exponential transformation</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="bg-card border-border text-center">
+                <CardHeader>
+                  <CardTitle className="text-xl">OpenExO</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <a href="https://openexo.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    openexo.com
+                  </a>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border text-center">
+                <CardHeader>
+                  <CardTitle className="text-xl">ExO Works</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <a href="https://exo.works" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    exo.works
+                  </a>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border text-center">
+                <CardHeader>
+                  <CardTitle className="text-xl">ExoRAX AI</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <a href="https://exorax.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    exorax.ai
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -104,101 +309,6 @@ export default function About() {
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
                     Serial entrepreneur, scaled two SaaS companies from seed to exit. Expert in operational scaling.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission & Vision */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">
-                  <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                    Our Mission
-                  </span>
-                </h2>
-                <p className="text-lg text-muted-foreground mb-4">
-                  To democratize access to enterprise-grade AI infrastructure, enabling organizations of all sizes to deploy, scale, and innovate with artificial intelligence.
-                </p>
-                <p className="text-muted-foreground">
-                  We believe that powerful AI capabilities should be accessible, scalable, and sustainable. Our platform eliminates the traditional barriers to AI adoption—from infrastructure complexity to resource constraints—empowering teams to focus on innovation.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-bold mb-6">
-                  <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    Our Vision
-                  </span>
-                </h2>
-                <p className="text-lg text-muted-foreground mb-4">
-                  To build the world's most trusted and efficient AI infrastructure platform, powering the next generation of transformative applications.
-                </p>
-                <p className="text-muted-foreground">
-                  We envision a future where AI development is seamless, sustainable, and scalable—where infrastructure empowers innovation rather than limiting it. Through cutting-edge technology and operational excellence, we're making that future a reality.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Values</h2>
-              <p className="text-muted-foreground text-lg">The principles that guide everything we do</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-                <CardHeader>
-                  <CardTitle className="text-lg">Innovation First</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    We continuously push boundaries, investing in cutting-edge technology to stay ahead of industry needs.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/20">
-                <CardHeader>
-                  <CardTitle className="text-lg">Customer Success</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Our success is measured by our customers' success. We're committed to delivering value at every touchpoint.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
-                <CardHeader>
-                  <CardTitle className="text-lg">Operational Excellence</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    We maintain the highest standards of reliability, efficiency, and performance across all operations.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
-                <CardHeader>
-                  <CardTitle className="text-lg">Sustainability</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    100% renewable energy and industry-leading efficiency drive our commitment to sustainable computing.
                   </p>
                 </CardContent>
               </Card>
