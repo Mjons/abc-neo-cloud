@@ -77,16 +77,7 @@ export default function AIHub() {
                 <p className="text-muted-foreground mb-4">
                   By offering a unified solution for the entire machine learning lifecycle, EXORAX AI Hub enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-sm">Projected ARR exceeding $50M by 2027</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-sm">Customer growth CAGR of 35%</span>
-                  </div>
-                </div>
+
               </CardContent>
             </Card>
           </div>
