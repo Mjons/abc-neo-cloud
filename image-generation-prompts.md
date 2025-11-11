@@ -4,7 +4,7 @@
 
 ---
 
-## Brand Visual Identity
+## Brand Visual Identity*
 
 **Color Palette:**
 - Primary: Deep tech blue (#0A1628) with electric cyan accents (#00D9FF)
