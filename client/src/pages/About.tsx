@@ -130,8 +130,8 @@ export default function About() {
               <p className="text-muted-foreground text-lg">Building a comprehensive ecosystem for exponential transformation</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="bg-card border-border text-center">
+            <div className="flex justify-center">
+              <Card className="bg-card border-border text-center max-w-md w-full">
                 <CardHeader>
                   <CardTitle className="text-xl">OpenExO</CardTitle>
                 </CardHeader>
