@@ -239,91 +239,6 @@ export default function GPUaaS() {
         </div>
       </section>
 
-      {/* Market Opportunity */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Market Opportunity</h2>
-              <p className="text-muted-foreground text-lg">Rapidly expanding market with strong growth drivers</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">$25B+</CardTitle>
-                  <CardDescription className="text-lg text-foreground">Global Cloud GPU Market by 2028</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    CAGR above 30%. AI adoption across industries and expansion of hyperscale data centres driving sustained growth.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-purple-500/20">
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">10M+</CardTitle>
-                  <CardDescription className="text-lg text-foreground">Active AI Developers Worldwide</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Developer demand seeking scalable GPU access for model training and deployment continues to accelerate.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold mb-8 text-center">Growth Drivers</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <CardTitle className="text-lg">AI Adoption</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Enterprise AI initiatives expanding across financial services, healthcare, retail, and manufacturing sectors.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <CardTitle className="text-lg">Hyperscale Expansion</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Cloud providers and technology platforms investing heavily in GPU infrastructure to meet demand.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <CardTitle className="text-lg">Developer Ecosystem</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Growing community of AI/ML developers requiring accessible, cost-effective compute resources.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Competitive Advantage */}
       <section className="py-20 bg-card/50">
         <div className="container">
@@ -533,16 +448,18 @@ export default function GPUaaS() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
-                <div className="flex items-center gap-2 mb-4">
-                  <img
-                    src="/assets/logo_white.png"
-                    alt="EXORAX Neo Cloud"
-                    className="h-12 w-auto"
-                  />
+                <div className="mb-4">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    EXORAX
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Infrastructure-First AI Computing Platform
+                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
                 </p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  enabling enterprises worldwide to secure institutional knowledge and optimize
+                </p>
+                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>

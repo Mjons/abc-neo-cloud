@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users } from "lucide-react";
 import { Link } from "wouter";
 
 export default function About() {
@@ -48,7 +47,7 @@ export default function About() {
               Organizations Inc.
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              A neocloud provider exiting stealth mode, enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
+              A leading edge neocloud provider enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
             </p>
           </div>
         </div>
@@ -61,103 +60,13 @@ export default function About() {
             <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
               <CardContent className="pt-8 pb-8">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  <strong className="text-foreground">Exponential Organizations Inc. ("ExO")</strong> is a neocloud provider exiting stealth mode, enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
+                  <strong className="text-foreground">Exponential Organizations Inc. ("ExO")</strong> is a leading edge neocloud provider enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Led by executives with multiple 8-11 figure outcomes and supported by <strong className="text-primary">500+ engineers</strong> plus <strong className="text-primary">40,000 domain expert community</strong>, ExO builds upon successes of its eponymous 1M+ bestseller with proprietary IP for <strong className="text-primary">3x better revenue growth</strong>, <strong className="text-primary">6.8x greater profitability</strong>, <strong className="text-primary">40x higher shareholder returns</strong>, and <strong className="text-primary">11.7x higher asset utilization</strong>, across 300+ F500 engagements.
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Client Showcase */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
-              <p className="text-muted-foreground text-lg">300+ Fortune 500 engagements across diverse industries</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Accenture</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Airbnb</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Allianz</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Amazon</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Bank of America</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Coca Cola</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">IBM</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">KPMG</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">P&G</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Samsung</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Siemens Energy</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">SpaceX</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Tesla</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">Qualcomm</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6">
-                  <p className="font-semibold">VISA</p>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
@@ -174,7 +83,19 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
                 <CardHeader>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">150+</CardTitle>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">40K+</CardTitle>
+                  <CardDescription className="text-base text-foreground">Domain Experts</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Extensive community of specialized professionals across diverse industries.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/20">
+                <CardHeader>
+                  <CardTitle className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2">150+</CardTitle>
                   <CardDescription className="text-base text-foreground">Countries</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -184,26 +105,14 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/20">
+              <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
                 <CardHeader>
-                  <CardTitle className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2">57</CardTitle>
+                  <CardTitle className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">47</CardTitle>
                   <CardDescription className="text-base text-foreground">Languages</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
                     Multilingual support enabling seamless global collaboration and knowledge transfer.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
-                <CardHeader>
-                  <CardTitle className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">40K+</CardTitle>
-                  <CardDescription className="text-base text-foreground">Domain Experts</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Extensive community of specialized professionals across diverse industries.
                   </p>
                 </CardContent>
               </Card>
@@ -233,106 +142,16 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-card border-border text-center">
+              {/* <Card className="bg-card border-border text-center">
                 <CardHeader>
-                  <CardTitle className="text-xl">ExO Works</CardTitle>
+                  <CardTitle className="text-xl">EXO AI Global</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <a href="https://exo.works" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                    exo.works
+                  <a href="https://exoaiglobal.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    exoaiglobal.com
                   </a>
                 </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border text-center">
-                <CardHeader>
-                  <CardTitle className="text-xl">ExoRAX AI</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <a href="https://exorax.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                    exorax.ai
-                  </a>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Founding Team</h2>
-              <p className="text-muted-foreground text-lg">Proven expertise in infrastructure, AI, and finance</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle>Alex Morgan</CardTitle>
-                  <CardDescription className="text-primary font-semibold">CEO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Former Head of Cloud Engineering at leading hyperscaler. 15+ years in data centre innovation.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle>Priya Singh</CardTitle>
-                  <CardDescription className="text-primary font-semibold">CTO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    AI systems architect, ex-GPU platform lead at global chipmaker. Holds multiple infrastructure patents.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle>Daniel Kim</CardTitle>
-                  <CardDescription className="text-primary font-semibold">COO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Serial entrepreneur, scaled two SaaS companies from seed to exit. Expert in operational scaling.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-cyan-500/20 via-background to-purple-500/20">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Join Us on Our Journey</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Explore our platform and discover how we can help you scale your AI initiatives
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-12 py-6 h-auto" asChild>
-                <Link href="/infrastructure"><a>Explore Infrastructure</a></Link>
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-12 py-6 h-auto" asChild>
-                <a href="mailto:info@exorax.com">Contact Us</a>
-              </Button>
+              </Card> */}
             </div>
           </div>
         </div>

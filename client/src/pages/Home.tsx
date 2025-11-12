@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="text-sm text-muted-foreground">Rack Density</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">1.30</div>
+                <div className="text-3xl font-bold text-primary">1.1</div>
                 <div className="text-sm text-muted-foreground">PUE Rating</div>
               </div>
               <div>
@@ -224,7 +224,7 @@ export default function Home() {
                     <img src="/assets/icon_cloudTransfer.png" alt="" className="w-8 h-8" />
                     <Badge variant="secondary">FULL STACK</Badge>
                   </div>
-                  <CardTitle className="text-2xl">AI Hub Platform</CardTitle>
+                  <CardTitle className="text-2xl">Enterprise AI Solution</CardTitle>
                   <CardDescription>Complete AI Development</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -339,7 +339,7 @@ export default function Home() {
                   <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
                     <img src="/assets/icon_arrows.png" alt="" className="w-10 h-10" />
                   </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.30</CardTitle>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.1</CardTitle>
                   <CardDescription className="text-base">PUE Rating</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -351,6 +351,101 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Partner Logos - Continuous Scroll */}
+      <section className="py-16 bg-background/50 border-y border-border overflow-hidden">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Leading Organizations</h2>
+            <p className="text-muted-foreground text-lg">Join thousands of companies transforming through exponential methodologies</p>
+          </div>
+        </div>
+
+        {/* Scrolling logos container */}
+        <div className="relative">
+          <div className="flex animate-scroll">
+            {/* First set of logos */}
+            <div className="flex items-center gap-16 px-8 flex-shrink-0">
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex items-center gap-16 px-8 flex-shrink-0">
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-20 w-40">
+                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          .animate-scroll {
+            animation: scroll 30s linear infinite;
+          }
+
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       {/* Footer */}
@@ -365,8 +460,12 @@ export default function Home() {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Infrastructure-First AI Computing Platform
+                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
                 </p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  enabling enterprises worldwide to secure institutional knowledge and optimize
+                </p>
+                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
 
               <div>

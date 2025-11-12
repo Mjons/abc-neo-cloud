@@ -648,16 +648,18 @@ export default function AIHub() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
-                <div className="flex items-center gap-2 mb-4">
-                  <img
-                    src="/assets/logo_white.png"
-                    alt="EXORAX Neo Cloud"
-                    className="h-12 w-auto"
-                  />
+                <div className="mb-4">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    EXORAX
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Infrastructure-First AI Computing Platform
+                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
                 </p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  enabling enterprises worldwide to secure institutional knowledge and optimize
+                </p>
+                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>

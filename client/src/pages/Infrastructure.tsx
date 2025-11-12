@@ -407,7 +407,7 @@ export default function Infrastructure() {
                   <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
                     <img src="/assets/icon_arrows.png" alt="" className="w-10 h-10" />
                   </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.30</CardTitle>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.1</CardTitle>
                   <CardDescription className="text-base">PUE Rating</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -448,85 +448,6 @@ export default function Infrastructure() {
                   </div>
                 </div>
               </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Market & Target Customers */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Market Opportunity</h2>
-              <p className="text-muted-foreground text-lg">Robust revenue potential supported by recurring, long-term contracts</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">$400B+</CardTitle>
-                  <CardDescription className="text-lg text-foreground">Global AI Infrastructure Market by 2030</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Investments expected to exceed $1 trillion over the coming decade, creating sustained demand.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-purple-500/20">
-                <CardHeader>
-                  <CardTitle className="text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">2GW+</CardTitle>
-                  <CardDescription className="text-lg text-foreground">Demand Gap in Priority Regions</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Hyperscale capacity shortage exceeding 2GW in strategic regions creates immediate revenue opportunity.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold mb-8 text-center">Target Customers</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <CardTitle>AI Startups & Scaleups</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Rapidly growing technology organizations requiring scalable infrastructure
-                    </p>
-                    <div className="text-sm font-semibold text-primary">Deal size: 500kW - 5MW</div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <CardTitle>Enterprises</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Financial services, healthcare, manufacturing corporations deploying AI at scale
-                    </p>
-                    <div className="text-sm font-semibold text-primary">Deal size: 2MW - 10MW</div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <CardTitle>Hyperscalers</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Global cloud providers and technology platforms seeking capacity expansion
-                    </p>
-                    <div className="text-sm font-semibold text-primary">Deal size: 10MW - 20MW+</div>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
           </div>
         </div>
@@ -640,16 +561,18 @@ export default function Infrastructure() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
-                <div className="flex items-center gap-2 mb-4">
-                  <img
-                    src="/assets/logo_white.png"
-                    alt="EXORAX Neo Cloud"
-                    className="h-12 w-auto"
-                  />
+                <div className="mb-4">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    EXORAX
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Infrastructure-First AI Computing Platform
+                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
                 </p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  enabling enterprises worldwide to secure institutional knowledge and optimize
+                </p>
+                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>
