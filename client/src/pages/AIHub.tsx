@@ -22,7 +22,7 @@ export default function AIHub() {
               <Link href="/"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a></Link>
               <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
               <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
-              <Link href="/aihub"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">AI Hub</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">Enterprise AI Solution</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button size="sm" asChild>
@@ -38,7 +38,7 @@ export default function AIHub() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 text-sm px-4 py-1.5" variant="secondary">
-              AI HUB • FULL STACK MLOPS
+              ENTERPRISE AI SOLUTION • FULL STACK MLOPS
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
@@ -75,7 +75,7 @@ export default function AIHub() {
             <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-4">
-                  By offering a unified solution for the entire machine learning lifecycle, EXORAX AI Hub enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
+                  By offering a unified solution for the entire machine learning lifecycle, EXORAX Enterprise AI Solution enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
                 </p>
 
               </CardContent>
@@ -543,7 +543,7 @@ export default function AIHub() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXORAX AI Hub</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXORAX Enterprise AI Solution</h2>
               <p className="text-muted-foreground text-lg">End-to-end lifecycle coverage with enterprise-grade governance</p>
             </div>
 
@@ -552,7 +552,7 @@ export default function AIHub() {
                 <thead>
                   <tr className="border-b border-border">
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Capability</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXORAX AI Hub</th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXORAX Enterprise AI</th>
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Competitor A</th>
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Competitor B</th>
                   </tr>
@@ -666,8 +666,7 @@ export default function AIHub() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
                   <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">AI Hub</a></Link>
-              <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solution</a></Link></li>
                 </ul>
               </div>
               <div>

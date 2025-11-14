@@ -22,7 +22,7 @@ export default function Home() {
               <Link href="/"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">Home</a></Link>
               <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
               <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
-              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">AI Hub</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solution</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button asChild>
@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="text-sm text-muted-foreground">Rack Density</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">1.1</div>
+                <div className="text-3xl font-bold text-primary">1.1 to 1.3</div>
                 <div className="text-sm text-muted-foreground">PUE Rating</div>
               </div>
               <div>
@@ -339,7 +339,7 @@ export default function Home() {
                   <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
                     <img src="/assets/icon_arrows.png" alt="" className="w-10 h-10" />
                   </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.1</CardTitle>
+                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.1 to 1.3</CardTitle>
                   <CardDescription className="text-base">PUE Rating</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -473,7 +473,7 @@ export default function Home() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
                   <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">AI Hub</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solution</a></Link></li>
                 </ul>
               </div>
 
