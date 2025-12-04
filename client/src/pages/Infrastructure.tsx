@@ -20,9 +20,9 @@ export default function Infrastructure() {
             </Link>
             <div className="hidden md:flex items-center gap-8">
               <Link href="/"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a></Link>
-              <Link href="/infrastructure"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">Infrastructure</a></Link>
-              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
-              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solution</a></Link>
+              <Link href="/infrastructure"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">AI Factory</a></Link>
+              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPU Cloud</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button size="sm" asChild>
@@ -38,17 +38,15 @@ export default function Infrastructure() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 text-sm px-4 py-1.5" variant="secondary">
-              INFRASTRUCTURE • POWER + SPACE
+              AI FACTORY • POWER + SPACE
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Turnkey AI Infrastructure
+                Turnkey AI Factory
               </span>
-              <br />
-              Foundation
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Purpose-built infrastructure delivering high-density, scalable, and secure solutions tailored for artificial intelligence and high-performance computing workloads.
+              We re-purpose the Existing Power Infrastructure ("EPI"), including buildings, substations, transformers et al, for Hyperscale and enterprise clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
@@ -58,72 +56,6 @@ export default function Infrastructure() {
                 
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Statement */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">The AI Infrastructure Crisis</h2>
-            <p className="text-muted-foreground text-center mb-12">
-              The demand for artificial intelligence is rapidly surpassing the capacity of global infrastructure.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_chip.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Capacity Constraints</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Constraints in data centre capacity threaten both innovation and sustained growth.
-                  </p>
-                  <p className="text-sm font-semibold text-primary">
-                    Current data centre supply falls short by over 40% in strategic markets.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_power.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Operational Challenges</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Increasing requirements for power, cooling, and security pose significant operational challenges.
-                  </p>
-                  <p className="text-sm font-semibold text-primary">
-                    Extended lead times and high capital intensity restrict deployment.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-              <CardHeader>
-                <CardTitle className="text-2xl">Key Statistics</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Global demand for AI computing projected to increase tenfold by 2030</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Investments in AI infrastructure expected to exceed $1 trillion over the coming decade</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -231,224 +163,6 @@ export default function Infrastructure() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Models */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Service Models</h2>
-              <p className="text-muted-foreground text-lg">Flexible deployment options to meet your specific needs</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Colocation */}
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <Badge className="w-fit mb-4" variant="secondary">COLOCATION</Badge>
-                  <CardTitle className="text-2xl">Secure Space</CardTitle>
-                  <CardDescription>Scalable space for client-owned equipment</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Dedicated rack space with power allocation</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">99.999% uptime SLA</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">24/7 facility access</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Full hardware control</span>
-                    </div>
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <div className="text-sm text-muted-foreground mb-2">Revenue Contribution: 55%</div>
-                    <div className="text-sm text-muted-foreground">Typical Contract: 3-5 years</div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Build-to-Suit */}
-              <Card className="bg-card border-primary relative overflow-hidden scale-105 shadow-xl shadow-cyan-500/20">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500" />
-                <div className="absolute top-4 right-4">
-                  <Badge className="bg-primary text-primary-foreground">POPULAR</Badge>
-                </div>
-                <CardHeader>
-                  <Badge className="w-fit mb-4" variant="secondary">BUILD-TO-SUIT</Badge>
-                  <CardTitle className="text-2xl">Custom Facilities</CardTitle>
-                  <CardDescription>Developed to meet specific enterprise needs</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Purpose-built infrastructure</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Custom power & cooling specifications</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Location flexibility</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Dedicated team & support</span>
-                    </div>
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <div className="text-sm text-muted-foreground mb-2">Revenue Contribution: 30%</div>
-                    <div className="text-sm text-muted-foreground">Typical Contract: 5-10 years</div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Powered Shell */}
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <Badge className="w-fit mb-4" variant="secondary">POWERED SHELL</Badge>
-                  <CardTitle className="text-2xl">Ready Infrastructure</CardTitle>
-                  <CardDescription>Ready-to-fit infrastructure for swift activation</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Pre-configured power distribution</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Cooling infrastructure in place</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Rapid deployment timeline</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Flexible fit-out options</span>
-                    </div>
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <div className="text-sm text-muted-foreground mb-2">Revenue Contribution: 15%</div>
-                    <div className="text-sm text-muted-foreground">Typical Contract: 3-7 years</div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-muted-foreground mb-4">Transparent, competitive pricing aligned with customer scale and utilization</p>
-              <Button size="lg" asChild>
-                <a href="mailto:info@exorax.com">
-                  <Mail className="mr-2 w-4 h-4" />
-                  Request Pricing
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Infrastructure Stats */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Infrastructure Advantages</h2>
-              <p className="text-muted-foreground text-lg">Purpose-built for AI workloads with industry-leading efficiency</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
-                    <img src="/assets/icon_power.png" alt="" className="w-10 h-10" />
-                  </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">150MW</CardTitle>
-                  <CardDescription className="text-base">Current Power Capacity</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Access to reliable, high-capacity grids. Expansion rights for 75MW additional capacity secured.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/20">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
-                    <img src="/assets/icon_fan.png" alt="" className="w-10 h-10" />
-                  </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">100kW</CardTitle>
-                  <CardDescription className="text-base">Rack Power Density</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Advanced liquid and air cooling systems enabling maximum performance and efficiency.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center bg-primary/10 rounded-lg">
-                    <img src="/assets/icon_arrows.png" alt="" className="w-10 h-10" />
-                  </div>
-                  <CardTitle className="text-5xl font-bold text-primary mb-2">1.1 to 1.3</CardTitle>
-                  <CardDescription className="text-base">PUE Rating</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Industry-leading efficiency. 38% lower operating costs vs traditional facilities.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-card border-border overflow-hidden group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src="/assets/datacenter.png"
-                    alt="High-density data center infrastructure"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-lg font-semibold text-foreground mb-1">High-Density Infrastructure</h3>
-                    <p className="text-sm text-muted-foreground">Purpose-built facilities optimized for AI compute</p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="bg-card border-border overflow-hidden group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src="/assets/liqud_cooling.png"
-                    alt="Advanced liquid cooling system"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-lg font-semibold text-foreground mb-1">Advanced Liquid Cooling</h3>
-                    <p className="text-sm text-muted-foreground">100kW per rack with immersion cooling technology</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
@@ -567,19 +281,15 @@ export default function Infrastructure() {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
+                  EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.
                 </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  enabling enterprises worldwide to secure institutional knowledge and optimize
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
-                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solution</a></Link></li>
+                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">AI Factory</a></Link></li>
+                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPU Cloud</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link></li>
                 </ul>
               </div>
               <div>

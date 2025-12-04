@@ -3,6 +3,29 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "wouter";
 
+// Company logos
+import airclicLogo from "@/logos/AirClic.png";
+import ikonLogo from "@/logos/Ikon-Logo_PDF_file-01.svg";
+import observableLogo from "@/logos/obs_networks.png";
+import keystoneLogo from "@/logos/Keystone-Centre-Logo-reversed.png";
+import singularityLogo from "@/logos/singularity_U.png";
+import sunLogo from "@/logos/sun_microsystems_logo_2385.png";
+import yahooLogo from "@/logos/yahoo-logo-2019.png";
+import xprizeLogo from "@/logos/XPRIZE_Logo.png";
+import xtiumLogo from "@/logos/mk-capital-brand xtium-logo.svg";
+
+const companyLogos = [
+  { name: "AirClic", logo: airclicLogo, url: "https://soti.net" },
+  { name: "Ikon Technology Services", logo: ikonLogo, url: "https://ikontechnologyservices.com" },
+  { name: "Observable Networks", logo: observableLogo, url: "https://cisco.com" },
+  { name: "KeystoneNAP", logo: keystoneLogo, url: "https://keystonenap.com" },
+  { name: "Singularity University", logo: singularityLogo, url: "https://su.org" },
+  { name: "Sun Microsystems", logo: sunLogo, url: "https://oracle.com/sun" },
+  { name: "Yahoo", logo: yahooLogo, url: "https://yahoo.com" },
+  { name: "XPRIZE", logo: xprizeLogo, url: "https://xprize.org" },
+  { name: "Xtium", logo: xtiumLogo, url: "https://xtium.com" },
+];
+
 export default function About() {
   return (
     <div className="min-h-screen">
@@ -19,9 +42,9 @@ export default function About() {
             </Link>
             <div className="hidden md:flex items-center gap-8">
               <Link href="/"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a></Link>
-              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
-              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
-              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solution</a></Link>
+              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">AI Factory</a></Link>
+              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPU Cloud</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button size="sm" asChild>
@@ -32,7 +55,7 @@ export default function About() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-background/50 to-purple-500/10" />
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
@@ -41,32 +64,97 @@ export default function About() {
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Exponential
+                EXORAX
               </span>
-              <br />
-              Organizations Inc.
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              A leading edge neocloud provider enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
+            <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
+              EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.
             </p>
+            <div className="flex flex-wrap justify-center gap-8 text-center">
+              <div>
+                <div className="text-3xl font-bold text-primary">500+</div>
+                <div className="text-sm text-muted-foreground">Engineers</div>
+              </div>
+              <div className="w-px bg-border hidden sm:block" />
+              <div>
+                <div className="text-3xl font-bold text-primary">40K+</div>
+                <div className="text-sm text-muted-foreground">Domain Experts</div>
+              </div>
+              <div className="w-px bg-border hidden sm:block" />
+              <div>
+                <div className="text-3xl font-bold text-primary">8-11</div>
+                <div className="text-sm text-muted-foreground">Figure Outcomes</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Company Overview */}
+      {/* Leadership */}
       <section className="py-20 bg-card/50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Leadership</h2>
+              <p className="text-muted-foreground text-lg">Exponential Organizations methodology powering enterprise transformation</p>
+            </div>
+            <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
               <CardContent className="pt-8 pb-8">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  <strong className="text-foreground">Exponential Organizations Inc. ("ExO")</strong> is a leading edge neocloud provider enabling enterprises worldwide to secure institutional knowledge and optimize AI outcomes.
+                  <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a>, former head of innovation at Yahoo, founding executive of Singularity University and current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">XPRIZE</a>, bestselling author of Exponential Organizations (1M+ books sold), with a distributed global consulting practice delivering:
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Led by executives with multiple 8-11 figure outcomes and supported by <strong className="text-primary">500+ engineers</strong> plus <strong className="text-primary">40,000 domain expert community</strong>, ExO builds upon successes of its eponymous 1M+ bestseller with proprietary IP for <strong className="text-primary">3x better revenue growth</strong>, <strong className="text-primary">6.8x greater profitability</strong>, <strong className="text-primary">40x higher shareholder returns</strong>, and <strong className="text-primary">11.7x higher asset utilization</strong>, across 300+ F500 engagements.
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">3x</div>
+                    <div className="text-xs text-muted-foreground">Revenue Growth</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">6.8x</div>
+                    <div className="text-xs text-muted-foreground">Profitability</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">40x</div>
+                    <div className="text-xs text-muted-foreground">Shareholder Returns</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">11.7x</div>
+                    <div className="text-xs text-muted-foreground">Asset Utilization</div>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  300+ F500 engagements including Accenture, Airbnb, Amazon, Coca Cola, P&G, Samsung, SpaceX, Tesla, and VISA
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Founded or Led Companies */}
+      <section className="py-20">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Founded or Led</h2>
+              <p className="text-muted-foreground text-lg">Track record of building successful technology companies</p>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center">
+              {companyLogos.map((company) => (
+                <a
+                  key={company.name}
+                  href={company.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center p-4 bg-white/5 rounded-xl h-24 w-full hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="max-h-14 max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -121,38 +209,21 @@ export default function About() {
         </div>
       </section>
 
-      {/* Affiliates */}
+      {/* Ecosystem */}
       <section className="py-20">
         <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">ExO Affiliates</h2>
-              <p className="text-muted-foreground text-lg">Building a comprehensive ecosystem for exponential transformation</p>
-            </div>
-
-            <div className="flex justify-center">
-              <Card className="bg-card border-border text-center max-w-md w-full">
-                <CardHeader>
-                  <CardTitle className="text-xl">OpenExO</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <a href="https://openexo.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                    openexo.com
-                  </a>
-                </CardContent>
-              </Card>
-
-              {/* <Card className="bg-card border-border text-center">
-                <CardHeader>
-                  <CardTitle className="text-xl">EXO AI Global</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <a href="https://exoaiglobal.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                    exoaiglobal.com
-                  </a>
-                </CardContent>
-              </Card> */}
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Ecosystem</h2>
+            <p className="text-muted-foreground text-lg mb-8">Building a comprehensive platform for exponential transformation</p>
+            <a
+              href="https://openexo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 hover:bg-primary/20 rounded-lg text-primary font-medium transition-colors"
+            >
+              OpenExO Community
+              <span className="text-xs opacity-70">openexo.com</span>
+            </a>
           </div>
         </div>
       </section>
@@ -169,15 +240,15 @@ export default function About() {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Infrastructure-First AI Computing Platform
+                  EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
-                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solution</a></Link></li>
+                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">AI Factory</a></Link></li>
+                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPU Cloud</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link></li>
                 </ul>
               </div>
               <div>

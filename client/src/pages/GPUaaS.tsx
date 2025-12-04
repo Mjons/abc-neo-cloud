@@ -20,9 +20,9 @@ export default function GPUaaS() {
             </Link>
             <div className="hidden md:flex items-center gap-8">
               <Link href="/"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a></Link>
-              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
-              <Link href="/gpuaas"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">GPUaaS</a></Link>
-              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solution</a></Link>
+              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">AI Factory</a></Link>
+              <Link href="/gpuaas"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">GPU Cloud</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button size="sm" asChild>
@@ -38,17 +38,15 @@ export default function GPUaaS() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 text-sm px-4 py-1.5" variant="secondary">
-              GPU AS A SERVICE • COMPUTE
+              GPU CLOUD • COMPUTE
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Instant GPU Access
+                GPU Cloud
               </span>
-              <br />
-              for AI Innovation
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Immediate, self-service access to a global fleet of high-performance GPUs. Scale your AI workloads on demand without infrastructure constraints.
+              Scale your AI workload with AI innovation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
@@ -58,7 +56,7 @@ export default function GPUaaS() {
                 
               </Button>
             </div>
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <div className="text-3xl font-bold text-primary">Instant</div>
                 <div className="text-sm text-muted-foreground">Global Availability</div>
@@ -66,6 +64,14 @@ export default function GPUaaS() {
               <div>
                 <div className="text-3xl font-bold text-primary">Flexible</div>
                 <div className="text-sm text-muted-foreground">Usage-Based Pricing</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary">Secure</div>
+                <div className="text-sm text-muted-foreground">Enterprise-Grade</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary">Sovereign</div>
+                <div className="text-sm text-muted-foreground">Workload Sovereignty</div>
               </div>
             </div>
           </div>
@@ -81,69 +87,6 @@ export default function GPUaaS() {
               A pioneering cloud infrastructure provider enabling instant, scalable access to GPU resources for enterprises, developers, and hyperscale clients.
             </p>
 
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
-              <CardContent className="pt-6">
-                <p className="text-muted-foreground">
-                  Our platform addresses the critical shortage of GPU availability in the market, positioning us as a key enabler for accelerated AI innovation and deployment. Investment in GPUaaS offers exposure to a fast-growing sector, robust revenue potential, and a leadership team with proven expertise in cloud and AI infrastructure.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Statement */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The GPU Availability Crisis</h2>
-              <p className="text-muted-foreground text-lg">Critical bottlenecks limiting AI development and deployment</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_chip.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Unprecedented Demand</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Rapid expansion of artificial intelligence applications has led to unprecedented demand for high-performance GPUs.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_power.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Provisioning Bottlenecks</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Traditional cloud providers face significant bottlenecks in provisioning these resources, resulting in delays and inflated costs.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_networkConnection.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Missed Innovation</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Resource constraints lead to missed innovation opportunities for businesses and developers seeking to advance AI initiatives.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
@@ -164,7 +107,7 @@ export default function GPUaaS() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">
-                  GPUaaS delivers immediate, self-service access to a global fleet of high-performance GPUs. Our platform streamlines deployment, allowing clients to scale resources on demand and accelerate their AI initiatives without infrastructure constraints.
+                  GPU Cloud delivers immediate, self-service access to a global fleet of high-performance GPUs. Our platform streamlines deployment, allowing clients to scale resources on demand and accelerate their AI initiatives without infrastructure constraints.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="flex items-start gap-3">
@@ -244,7 +187,7 @@ export default function GPUaaS() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXORAX GPUaaS</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXORAX GPU Cloud</h2>
               <p className="text-muted-foreground text-lg">Proprietary infrastructure, cost efficiency, and developer focus</p>
             </div>
 
@@ -253,7 +196,7 @@ export default function GPUaaS() {
                 <thead>
                   <tr className="border-b border-border">
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Capability</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXORAX GPUaaS</th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXORAX GPU Cloud</th>
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Traditional Cloud</th>
                     <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Emerging Provider</th>
                   </tr>
@@ -454,19 +397,15 @@ export default function GPUaaS() {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
+                  EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.
                 </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  enabling enterprises worldwide to secure institutional knowledge and optimize
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
-                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solution</a></Link></li>
+                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">AI Factory</a></Link></li>
+                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPU Cloud</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link></li>
                 </ul>
               </div>
               <div>

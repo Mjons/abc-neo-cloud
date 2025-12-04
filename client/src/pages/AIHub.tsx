@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Mail, TrendingUp } from "lucide-react";
+import { CheckCircle2, Mail } from "lucide-react";
 import { Link } from "wouter";
 
 export default function AIHub() {
@@ -20,9 +20,9 @@ export default function AIHub() {
             </Link>
             <div className="hidden md:flex items-center gap-8">
               <Link href="/"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a></Link>
-              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Infrastructure</a></Link>
-              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPUaaS</a></Link>
-              <Link href="/aihub"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">Enterprise AI Solution</a></Link>
+              <Link href="/infrastructure"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">AI Factory</a></Link>
+              <Link href="/gpuaas"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">GPU Cloud</a></Link>
+              <Link href="/aihub"><a className="text-sm font-medium text-primary hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link>
               <Link href="/about"><a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About Us</a></Link>
             </div>
             <Button size="sm" asChild>
@@ -38,17 +38,17 @@ export default function AIHub() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 text-sm px-4 py-1.5" variant="secondary">
-              ENTERPRISE AI SOLUTION • FULL STACK MLOPS
+              ENTERPRISE AI SOLUTIONS • AI OPERATING SYSTEM
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Enterprise MLOps
+                Enterprise AI
               </span>
               <br />
-              Platform
+              Operating System
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Accelerate, scale, and secure your machine learning operations. End-to-end platform for the entire ML lifecycle—from data ingestion to production deployment.
+              Accelerate, scale, and secure your AI innovation and operations. End-to-end platform for the entire AI lifecycle—from data ingestion to production deployment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
@@ -63,19 +63,114 @@ export default function AIHub() {
         </div>
       </section>
 
+      {/* Partner Logos - Continuous Scroll */}
+      <section className="py-16 bg-background/50 border-y border-border overflow-hidden">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Companies That Trust Us</h2>
+            <p className="text-muted-foreground text-lg">We help you explore and transition to AI cloud</p>
+          </div>
+        </div>
+
+        {/* Scrolling logos container */}
+        <div className="relative">
+          <div className="flex animate-scroll-aihub">
+            {/* First set of logos */}
+            <div className="flex items-center gap-16 px-8 flex-shrink-0">
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex items-center gap-16 px-8 flex-shrink-0">
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56">
+                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>{`
+          @keyframes scroll-aihub {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          .animate-scroll-aihub {
+            animation: scroll-aihub 30s linear infinite;
+          }
+
+          .animate-scroll-aihub:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
+
       {/* Executive Summary */}
       <section className="py-20 bg-card/50">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Empowering Enterprise AI</h2>
             <p className="text-lg text-muted-foreground text-center mb-12">
-              An integrated MLOps platform designed to address critical challenges enterprises face in deploying and managing AI initiatives at scale.
+              An integrated AI Operating System designed to address critical challenges enterprises face in deploying and managing AI initiatives at scale.
             </p>
 
             <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-4">
-                  By offering a unified solution for the entire machine learning lifecycle, EXORAX Enterprise AI Solution enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
+                  By offering a unified solution for the entire machine learning lifecycle, EXORAX Enterprise AI Solutions enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
                 </p>
 
               </CardContent>
@@ -147,7 +242,7 @@ export default function AIHub() {
                   <div>
                     <div className="font-semibold mb-2">Annual Global Cost of Failed AI Projects</div>
                     <p className="text-sm text-muted-foreground">
-                      Underscoring the urgent need for reliable, scalable MLOps solutions that ensure AI initiatives deliver measurable business value.
+                      Underscoring the urgent need for reliable, scalable AI platforms that ensure AI initiatives deliver measurable business value.
                     </p>
                   </div>
                 </div>
@@ -162,8 +257,8 @@ export default function AIHub() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Comprehensive MLOps Platform</h2>
-              <p className="text-muted-foreground text-lg">Streamline the entire machine learning lifecycle with confidence</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Platform</h2>
+              <p className="text-muted-foreground text-lg">Streamline the entire AI lifecycle with confidence</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -311,67 +406,6 @@ export default function AIHub() {
         </div>
       </section>
 
-      {/* Market Opportunity */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Market Opportunity</h2>
-              <p className="text-muted-foreground text-lg">Rapidly growing market driven by AI adoption and operational needs</p>
-            </div>
-
-         
-
-            <div>
-              <h3 className="text-2xl font-bold mb-8 text-center">Growth Drivers</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <CardTitle className="text-lg">AI Adoption</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Enterprise AI investments accelerating across all industries, driving demand for production-ready platforms.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <CardTitle className="text-lg">Governance Requirements</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Increasing regulatory scrutiny and compliance requirements creating demand for secure, auditable platforms.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <CardTitle className="text-lg">Digital Transformation</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Organizations modernizing infrastructure and seeking integrated solutions to streamline operations.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Business Model */}
       <section className="py-20">
         <div className="container">
@@ -507,7 +541,7 @@ export default function AIHub() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Technology-driven businesses requiring robust, scalable MLOps infrastructure for rapid innovation and deployment.
+                    Technology-driven businesses requiring robust, scalable AI infrastructure for rapid innovation and deployment.
                   </p>
                   <div className="text-sm font-semibold text-primary">High-growth segment</div>
                 </CardContent>
@@ -538,91 +572,11 @@ export default function AIHub() {
         </div>
       </section>
 
-      {/* Competitive Landscape */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why EXORAX Enterprise AI Solution</h2>
-              <p className="text-muted-foreground text-lg">End-to-end lifecycle coverage with enterprise-grade governance</p>
-            </div>
-
-            <div className="overflow-x-auto mb-12">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Capability</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-primary">EXORAX Enterprise AI</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Competitor A</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-muted-foreground">Competitor B</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Feature Coverage</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Comprehensive</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Partial</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Partial</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Security</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Advanced</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Standard</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Basic</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Scalability</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">High</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Medium</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Medium</td>
-                  </tr>
-                  <tr className="border-b border-border/50">
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Integration</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-primary">Seamless</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Limited</td>
-                    <td className="py-4 px-4 text-sm text-muted-foreground">Moderate</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="grid md:grid-cols-4 gap-6">
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">End-to-End</div>
-                  <div className="text-sm text-muted-foreground">Lifecycle Coverage</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2">Enterprise</div>
-                  <div className="text-sm text-muted-foreground">Governance & Compliance</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">Rapid</div>
-                  <div className="text-sm text-muted-foreground">Onboarding</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-card border-border">
-                <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">Superior</div>
-                  <div className="text-sm text-muted-foreground">Support</div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    
-
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-cyan-500/20 via-background to-purple-500/20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Transform Your AI Operations</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Accelerate Your AI Operations</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Join leading enterprises deploying production-ready AI with confidence
             </p>
@@ -654,19 +608,15 @@ export default function AIHub() {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Exponential Organizations Inc. "ExO" is a leading edge neocloud provider
+                  EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.
                 </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  enabling enterprises worldwide to secure institutional knowledge and optimize
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">AI outcomes.</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Platform</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">Infrastructure</a></Link></li>
-                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPUaaS</a></Link></li>
-                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solution</a></Link></li>
+                  <li><Link href="/infrastructure"><a className="hover:text-foreground transition-colors">AI Factory</a></Link></li>
+                  <li><Link href="/gpuaas"><a className="hover:text-foreground transition-colors">GPU Cloud</a></Link></li>
+                  <li><Link href="/aihub"><a className="hover:text-foreground transition-colors">Enterprise AI Solutions</a></Link></li>
                 </ul>
               </div>
               <div>
