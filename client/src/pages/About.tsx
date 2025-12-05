@@ -31,7 +31,6 @@ const companyLogos = [
   { name: "VMware", logo: vmwareLogo, url: "https://vmware.com" },
   { name: "Ricoh", logo: ricohLogo, url: "https://ricoh.com" },
   { name: "KeystoneNAP", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
-  { name: "FatBrain", logo: fatbrainLogo, url: "https://fatbrain.ai" },
 ];
 
 export default function About() {
@@ -104,17 +103,15 @@ export default function About() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Leadership</h2>
-              <p className="text-muted-foreground text-lg">Exponential Organizations methodology powering enterprise transformation</p>
+              <p className="text-muted-foreground text-lg">Executives with multiple <span className="text-primary font-semibold">8-11 figure outcomes</span></p>
             </div>
 
             {/* ExO Company Overview */}
             <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 mb-8">
               <CardContent className="pt-8 pb-8">
+                
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  <span className="text-primary font-bold">Exponential Organizations Inc.</span> ("ExO") is a leading edge <span className="text-primary font-semibold">neocloud provider</span> enabling enterprises worldwide to <span className="font-semibold text-foreground">secure institutional knowledge</span> and <span className="font-semibold text-foreground">optimize AI outcomes</span>.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Led by executives with multiple <span className="text-primary font-bold">8-11 figure outcomes</span> and supported by <span className="text-primary font-bold">500+ engineers</span> plus <span className="text-primary font-bold">40,000 domain expert</span> community, ExO builds upon successes of its eponymous <span className="font-semibold text-foreground">1M+ bestseller</span> with proprietary IP for:
+                  Backed by <span className="text-primary font-bold">500+ engineers</span> and a <span className="text-primary font-bold">40,000 domain expert</span> community, our organizational IP builds upon the <span className="font-semibold text-foreground">1M+ bestselling book Exponential Organizations</span> with proprietary methodologies delivering:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                   <div className="text-center">

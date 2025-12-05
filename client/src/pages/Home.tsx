@@ -56,11 +56,11 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                AI Native Neocloud Platform
+                AI Neocloud Platform
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Powering the next generation of AI innovation with purpose-built infrastructure, flexible GPU compute, and enterprise-grade platform services. We re-purpose the Existing Power Infrastructure ("EPI"), including buildings, substations, transformers et al, for Hyperscale and enterprise clients.
+              Powering the next generation of AI innovation with purpose-built infrastructure, flexible GPU compute, and enterprise-grade platform services. We re-purpose the Existing Power Infrastructure ("EPI"), including buildings, substations, transformers et al.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
@@ -92,6 +92,101 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Partner Logos - Continuous Scroll */}
+      <section className="py-16 bg-background/50 border-y border-border overflow-hidden">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Leading Organizations</h2>
+            <p className="text-muted-foreground text-lg">Join thousands of companies innovating through exponential methodologies</p>
+          </div>
+        </div>
+
+        {/* Scrolling logos container */}
+        <div className="relative">
+          <div className="flex animate-scroll">
+            {/* First set of logos */}
+            <div className="flex items-center gap-16 px-8 flex-shrink-0">
+              <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.airbus.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.bostonscientific.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.gucci.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.pg.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.stanleyblackanddecker.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.tdameritrade.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.unilever.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex items-center gap-16 px-8 flex-shrink-0">
+              <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.airbus.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.bostonscientific.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.gucci.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.pg.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.stanleyblackanddecker.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.tdameritrade.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.unilever.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
+                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <style>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          .animate-scroll {
+            animation: scroll 30s linear infinite;
+          }
+
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       {/* Three-Tier Platform */}
@@ -259,101 +354,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Partner Logos - Continuous Scroll */}
-      <section className="py-16 bg-background/50 border-y border-border overflow-hidden">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Leading Organizations</h2>
-            <p className="text-muted-foreground text-lg">Join thousands of companies transforming through exponential methodologies</p>
-          </div>
-        </div>
-
-        {/* Scrolling logos container */}
-        <div className="relative">
-          <div className="flex animate-scroll">
-            {/* First set of logos */}
-            <div className="flex items-center gap-16 px-8 flex-shrink-0">
-              <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.airbus.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.bostonscientific.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.gucci.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.pg.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.stanleyblackanddecker.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.tdameritrade.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.unilever.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-            </div>
-            {/* Duplicate set for seamless loop */}
-            <div className="flex items-center gap-16 px-8 flex-shrink-0">
-              <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/accenture_1753422821802-C5qDsYvM.png" alt="Accenture" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.airbus.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/airbus_1753422821803-CvpEresn.png" alt="Airbus" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.bostonscientific.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/boston scientific_1753422821803-BKhiV2eV.png" alt="Boston Scientific" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.gucci.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/gucci_1753422821804-D96OB3Qx.png" alt="Gucci" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.pg.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/P_G_1753422821804-wW3Hj3Mg.png" alt="P&G" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.stanleyblackanddecker.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/stanley-black-decker-logo-png_1753423969547-CInqkwGb.png" alt="Stanley Black & Decker" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.tdameritrade.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/TD_Ameritrade-Logo.wine_1753423969547-DiAemN2d.png" alt="TD Ameritrade" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.unilever.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/unilever_1753422821805-brTr5qzj.png" alt="Unilever" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
-                <img src="/assets/partner_logos/visa_1753422821805-B-iBhL4w.png" alt="VISA" className="h-18 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <style>{`
-          @keyframes scroll {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-
-          .animate-scroll {
-            animation: scroll 30s linear infinite;
-          }
-
-          .animate-scroll:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
       </section>
 
       {/* Footer */}
