@@ -111,31 +111,44 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Leadership</h2>
               <p className="text-muted-foreground text-lg">Exponential Organizations methodology powering enterprise transformation</p>
             </div>
-            <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
+
+            {/* ExO Company Overview */}
+            <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 mb-8">
               <CardContent className="pt-8 pb-8">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a>, former head of innovation at Yahoo, founding executive of Singularity University and current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">XPRIZE</a>, bestselling author of Exponential Organizations (1M+ books sold), with a distributed global consulting practice delivering:
+                  <span className="text-primary font-bold">Exponential Organizations Inc.</span> ("ExO") is a leading edge <span className="text-primary font-semibold">neocloud provider</span> enabling enterprises worldwide to <span className="font-semibold text-foreground">secure institutional knowledge</span> and <span className="font-semibold text-foreground">optimize AI outcomes</span>.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Led by executives with multiple <span className="text-primary font-bold">8-11 figure outcomes</span> and supported by <span className="text-primary font-bold">500+ engineers</span> plus <span className="text-primary font-bold">40,000 domain expert</span> community, ExO builds upon successes of its eponymous <span className="font-semibold text-foreground">1M+ bestseller</span> with proprietary IP for:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary">3x</div>
-                    <div className="text-xs text-muted-foreground">Revenue Growth</div>
+                    <div className="text-xs text-muted-foreground">Better Revenue Growth</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary">6.8x</div>
-                    <div className="text-xs text-muted-foreground">Profitability</div>
+                    <div className="text-xs text-muted-foreground">Greater Profitability</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary">40x</div>
-                    <div className="text-xs text-muted-foreground">Shareholder Returns</div>
+                    <div className="text-xs text-muted-foreground">Higher Shareholder Returns</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary">11.7x</div>
-                    <div className="text-xs text-muted-foreground">Asset Utilization</div>
+                    <div className="text-xs text-muted-foreground">Higher Asset Utilization</div>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground text-center">
-                  300+ F500 engagements including Accenture, Airbnb, Amazon, Coca Cola, P&G, Samsung, SpaceX, Tesla, and VISA
+                  Across <span className="text-primary font-semibold">300+ F500 engagements</span>
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
+              <CardContent className="pt-8 pb-8">
+                <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                  <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a>, former head of innovation at <span className="text-primary font-semibold">Yahoo</span>, founding executive of <span className="text-primary font-semibold">Singularity University</span>, current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">XPRIZE</a>, and bestselling author of <span className="font-semibold text-foreground">Exponential Organizations</span>.
                 </p>
               </CardContent>
             </Card>
