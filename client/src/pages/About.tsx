@@ -4,10 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "wouter";
 
 // Company logos
-import airclicLogo from "@/logos/AirClic.png";
-import ikonLogo from "@/logos/Ikon-Logo_PDF_file-01.svg";
 import observableLogo from "@/logos/obs_networks.png";
-import keystoneLogo from "@/logos/Keystone-Centre-Logo-reversed.png";
 import singularityLogo from "@/logos/singularity_U.png";
 import sunLogo from "@/logos/sun_microsystems_logo_2385.png";
 import yahooLogo from "@/logos/yahoo-logo-2019.png";
@@ -19,13 +16,9 @@ import motorolaLogo from "@/logos/Motorola-Logo-700x394.png";
 import vmwareLogo from "@/logos/VMware-Logo.png";
 import ricohLogo from "@/logos/logRicoho.svg";
 import keystoneNapLogo from "@/logos/keystoneNAP.png";
-import xtiumAltLogo from "@/logos/XTIUM_idf_EOIo7Y_1.svg";
 
 const companyLogos = [
-  { name: "AirClic", logo: airclicLogo, url: "https://soti.net" },
-  { name: "Ikon Technology Services", logo: ikonLogo, url: "https://ikontechnologyservices.com" },
   { name: "Observable Networks", logo: observableLogo, url: "https://cisco.com" },
-  { name: "KeystoneNAP", logo: keystoneLogo, url: "https://www.keystonenap.com" },
   { name: "Singularity University", logo: singularityLogo, url: "https://su.org" },
   { name: "Sun Microsystems", logo: sunLogo, url: "https://oracle.com/sun" },
   { name: "Yahoo", logo: yahooLogo, url: "https://yahoo.com" },
@@ -36,7 +29,7 @@ const companyLogos = [
   { name: "Motorola", logo: motorolaLogo, url: "https://motorola.com" },
   { name: "VMware", logo: vmwareLogo, url: "https://vmware.com" },
   { name: "Ricoh", logo: ricohLogo, url: "https://ricoh.com" },
-  { name: "KeystoneNAP DC", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
+  { name: "KeystoneNAP", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
 ];
 
 export default function About() {
