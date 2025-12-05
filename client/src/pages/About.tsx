@@ -16,6 +16,7 @@ import motorolaLogo from "@/logos/Motorola-Logo-700x394.png";
 import vmwareLogo from "@/logos/VMware-Logo.png";
 import ricohLogo from "@/logos/logRicoho.svg";
 import keystoneNapLogo from "@/logos/keystoneNAP.png";
+import fatbrainLogo from "@/logos/fatbrainLogo.png";
 
 const companyLogos = [
   { name: "Observable Networks", logo: observableLogo, url: "https://cisco.com" },
@@ -30,6 +31,7 @@ const companyLogos = [
   { name: "VMware", logo: vmwareLogo, url: "https://vmware.com" },
   { name: "Ricoh", logo: ricohLogo, url: "https://ricoh.com" },
   { name: "KeystoneNAP", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
+  { name: "FatBrain", logo: fatbrainLogo, url: "https://fatbrain.ai" },
 ];
 
 export default function About() {
