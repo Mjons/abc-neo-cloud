@@ -293,8 +293,36 @@ DROP POLICY IF EXISTS "policy_name" ON table_name;
 SELECT * FROM pg_policies WHERE tablename = 'contact_submissions';
 ```
 
+### Add unique constraint to prevent duplicates
+```sql
+ALTER TABLE table_name
+ADD CONSTRAINT table_name_column_unique
+UNIQUE (column_name);
+```
+
+### Remove unique constraint
+```sql
+ALTER TABLE table_name
+DROP CONSTRAINT constraint_name;
+```
+
+### View all constraints on a table
+```sql
+SELECT con.conname as constraint_name,
+       con.contype as constraint_type
+FROM pg_constraint con
+JOIN pg_class rel ON rel.oid = con.conrelid
+WHERE rel.relname = 'contact_submissions';
+```
+
 ---
 
 **Date Created:** December 6, 2025
+**Last Updated:** December 6, 2025
 **Project:** ExoRax Contact Form
+**Features:**
+- ✅ RLS enabled with INSERT-only policy for anon users
+- ✅ Duplicate email prevention with unique constraint
+- ✅ User-friendly error messages for all scenarios
+
 **Issue Resolved:** Yes ✅
