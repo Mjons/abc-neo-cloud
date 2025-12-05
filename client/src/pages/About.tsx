@@ -106,10 +106,28 @@ export default function About() {
               <p className="text-muted-foreground text-lg">Executives with multiple <span className="text-primary font-semibold">8-11 figure outcomes</span></p>
             </div>
 
+            {/* Company Logos Grid */}
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center mb-8">
+              {companyLogos.map((company) => (
+                <a
+                  key={company.name}
+                  href={company.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center p-4 bg-white/5 rounded-xl h-24 w-full hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="max-h-14 max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </a>
+              ))}
+            </div>
+
             {/* ExO Company Overview */}
             <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 mb-8">
               <CardContent className="pt-8 pb-8">
-                
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   With a proven track record of building successful technology companies, backed by <span className="text-primary font-bold">500+ engineers</span> and a <span className="text-primary font-bold">40,000 domain expert</span> community, our organizational IP builds upon the <span className="font-semibold text-foreground">1M+ bestselling book Exponential Organizations</span> with IP methodologies delivering:
                 </p>
@@ -136,25 +154,6 @@ export default function About() {
                 </p>
               </CardContent>
             </Card>
-
-            {/* Company Logos Grid */}
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center mb-8">
-              {companyLogos.map((company) => (
-                <a
-                  key={company.name}
-                  href={company.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center p-4 bg-white/5 rounded-xl h-24 w-full hover:bg-white/10 transition-colors cursor-pointer"
-                >
-                  <img
-                    src={company.logo}
-                    alt={company.name}
-                    className="max-h-14 max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </a>
-              ))}
-            </div>
 
             <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
               <CardContent className="pt-8 pb-8">
