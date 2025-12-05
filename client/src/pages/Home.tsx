@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Zap, Server, Cloud, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -354,6 +355,25 @@ export default function Home() {
             animation-play-state: paused;
           }
         `}</style>
+      </section>
+
+      {/* Get in Touch Section */}
+      <section className="py-20">
+        <div className="container">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                  Get in Touch
+                </span>
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Have a question or want to learn more? We'd love to hear from you.
+              </p>
+            </div>
+            <ContactForm />
+          </div>
+        </div>
       </section>
 
       {/* Footer */}

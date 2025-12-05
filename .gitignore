@@ -106,3 +106,5 @@ temp/
 *.sqlite3
 
 .vercel
+
+CLAUDE.md
