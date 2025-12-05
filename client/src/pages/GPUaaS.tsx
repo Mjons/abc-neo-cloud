@@ -46,7 +46,7 @@ export default function GPUaaS() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Scale your AI workload with AI innovation
+              Immediate, self-service access to a global fleet of high performance GPUs. Scale your AI workload with AI innovation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>

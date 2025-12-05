@@ -38,14 +38,14 @@ export default function AIHub() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 text-sm px-4 py-1.5" variant="secondary">
-              ENTERPRISE AI SOLUTIONS • AI OPERATING SYSTEM
+              ENTERPRISE AI SOLUTIONS AND SLAs
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Enterprise AI
+                Accelerate Your
               </span>
               <br />
-              Operating System
+              AI Operations
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Accelerate, scale, and secure your AI innovation and operations. End-to-end platform for the entire AI lifecycle—from data ingestion to production deployment.

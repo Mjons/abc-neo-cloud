@@ -13,17 +13,30 @@ import sunLogo from "@/logos/sun_microsystems_logo_2385.png";
 import yahooLogo from "@/logos/yahoo-logo-2019.png";
 import xprizeLogo from "@/logos/XPRIZE_Logo.png";
 import xtiumLogo from "@/logos/mk-capital-brand xtium-logo.svg";
+import akamaiLogo from "@/logos/Akami.png";
+import btLogo from "@/logos/BTLogo.png";
+import motorolaLogo from "@/logos/Motorola-Logo-700x394.png";
+import vmwareLogo from "@/logos/VMware-Logo.png";
+import ricohLogo from "@/logos/logRicoho.svg";
+import keystoneNapLogo from "@/logos/keystoneNAP.png";
+import xtiumAltLogo from "@/logos/XTIUM_idf_EOIo7Y_1.svg";
 
 const companyLogos = [
   { name: "AirClic", logo: airclicLogo, url: "https://soti.net" },
   { name: "Ikon Technology Services", logo: ikonLogo, url: "https://ikontechnologyservices.com" },
   { name: "Observable Networks", logo: observableLogo, url: "https://cisco.com" },
-  { name: "KeystoneNAP", logo: keystoneLogo, url: "https://keystonenap.com" },
+  { name: "KeystoneNAP", logo: keystoneLogo, url: "https://www.keystonenap.com" },
   { name: "Singularity University", logo: singularityLogo, url: "https://su.org" },
   { name: "Sun Microsystems", logo: sunLogo, url: "https://oracle.com/sun" },
   { name: "Yahoo", logo: yahooLogo, url: "https://yahoo.com" },
   { name: "XPRIZE", logo: xprizeLogo, url: "https://xprize.org" },
   { name: "Xtium", logo: xtiumLogo, url: "https://xtium.com" },
+  { name: "Akamai", logo: akamaiLogo, url: "https://akamai.com" },
+  { name: "BT", logo: btLogo, url: "https://bt.com" },
+  { name: "Motorola", logo: motorolaLogo, url: "https://motorola.com" },
+  { name: "VMware", logo: vmwareLogo, url: "https://vmware.com" },
+  { name: "Ricoh", logo: ricohLogo, url: "https://ricoh.com" },
+  { name: "KeystoneNAP DC", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
 ];
 
 export default function About() {
