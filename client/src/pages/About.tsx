@@ -111,7 +111,7 @@ export default function About() {
               <CardContent className="pt-8 pb-8">
                 
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Backed by <span className="text-primary font-bold">500+ engineers</span> and a <span className="text-primary font-bold">40,000 domain expert</span> community, our organizational IP builds upon the <span className="font-semibold text-foreground">1M+ bestselling book Exponential Organizations</span> with proprietary methodologies delivering:
+                  With a proven track record of building successful technology companies, backed by <span className="text-primary font-bold">500+ engineers</span> and a <span className="text-primary font-bold">40,000 domain expert</span> community, our organizational IP builds upon the <span className="font-semibold text-foreground">1M+ bestselling book Exponential Organizations</span> with IP methodologies delivering:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                   <div className="text-center">
@@ -137,26 +137,8 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
-              <CardContent className="pt-8 pb-8">
-                <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                  <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a>, former head of innovation at <span className="text-primary font-semibold">Yahoo</span>, founding executive of <span className="text-primary font-semibold">Singularity University</span>, current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">XPRIZE</a>, and bestselling author of <span className="font-semibold text-foreground">Exponential Organizations</span>.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Founded or Led Companies */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Founded or Led</h2>
-              <p className="text-muted-foreground text-lg">Track record of building successful technology companies</p>
-            </div>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center">
+            {/* Company Logos Grid */}
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center mb-8">
               {companyLogos.map((company) => (
                 <a
                   key={company.name}
@@ -173,6 +155,14 @@ export default function About() {
                 </a>
               ))}
             </div>
+
+            <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
+              <CardContent className="pt-8 pb-8">
+                <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                  <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a>, former head of innovation at <span className="text-primary font-semibold">Yahoo</span>, founding executive of <span className="text-primary font-semibold">Singularity University</span>, current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">XPRIZE</a>, and bestselling author of <span className="font-semibold text-foreground">Exponential Organizations</span>.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
