@@ -4,12 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "wouter";
 
 // Company logos
-import observableLogo from "@/logos/obs_networks.png";
+import ciscoLogo from "@/logos/Cisco_logo_blue_2016.svg.png";
 import singularityLogo from "@/logos/singularity_U.png";
 import sunLogo from "@/logos/sun_microsystems_logo_2385.png";
 import yahooLogo from "@/logos/yahoo-logo-2019.png";
 import xprizeLogo from "@/logos/XPRIZE_Logo.png";
-import xtiumLogo from "@/logos/mk-capital-brand xtium-logo.svg";
+import xtiumLogo from "@/logos/XTIUM_idf_EOIo7Y_1.svg";
 import akamaiLogo from "@/logos/Akami.png";
 import btLogo from "@/logos/BTLogo.png";
 import motorolaLogo from "@/logos/Motorola-Logo-700x394.png";
@@ -17,9 +17,11 @@ import vmwareLogo from "@/logos/VMware-Logo.png";
 import ricohLogo from "@/logos/logRicoho.svg";
 import keystoneNapLogo from "@/logos/keystoneNAP.png";
 import fatbrainLogo from "@/logos/fatbrainLogo.png";
+import netappLogo from "@/logos/netapp.png";
+import preciselyLogo from "@/logos/Precisely_logo.svg.png";
 
 const companyLogos = [
-  { name: "Observable Networks", logo: observableLogo, url: "https://cisco.com" },
+  { name: "Cisco", logo: ciscoLogo, url: "https://cisco.com" },
   { name: "Singularity University", logo: singularityLogo, url: "https://su.org" },
   { name: "Sun Microsystems", logo: sunLogo, url: "https://oracle.com/sun" },
   { name: "Yahoo", logo: yahooLogo, url: "https://yahoo.com" },
@@ -31,6 +33,9 @@ const companyLogos = [
   { name: "VMware", logo: vmwareLogo, url: "https://vmware.com" },
   { name: "Ricoh", logo: ricohLogo, url: "https://ricoh.com" },
   { name: "KeystoneNAP", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
+  { name: "FatBrain", logo: fatbrainLogo, url: "https://fatbrain.ai" },
+  { name: "NetApp", logo: netappLogo, url: "https://netapp.com" },
+  { name: "Precisely", logo: preciselyLogo, url: "https://precisely.com" },
 ];
 
 export default function About() {
@@ -125,43 +130,41 @@ export default function About() {
               ))}
             </div>
 
+            <div className="text-center mb-8 mt-16">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Organizational IP</h3>
+              <p className="text-muted-foreground text-lg">Exponential Organizations</p>
+            </div>
+
             {/* ExO Company Overview */}
             <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 mb-8">
               <CardContent className="pt-8 pb-8">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  With a proven track record of building successful technology companies, backed by <span className="text-primary font-bold">500+ engineers</span> and a <span className="text-primary font-bold">40,000 domain expert</span> community, our organizational IP builds upon the <span className="font-semibold text-foreground">1M+ bestselling book Exponential Organizations</span> with IP methodologies delivering:
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">3x</div>
-                    <div className="text-xs text-muted-foreground">Better Revenue Growth</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">6.8x</div>
-                    <div className="text-xs text-muted-foreground">Greater Profitability</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">40x</div>
-                    <div className="text-xs text-muted-foreground">Higher Shareholder Returns</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">11.7x</div>
-                    <div className="text-xs text-muted-foreground">Higher Asset Utilization</div>
-                  </div>
-                </div>
-                <p className="text-sm text-muted-foreground text-center">
-                  Across <span className="text-primary font-semibold">300+ F500 engagements</span>
+                <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                  Builds upon the <a href="https://openexo.com/book" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">1M+ bestselling book Exponential Organizations</a> by <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a> et al, former head of innovation at <span className="text-primary font-semibold">Yahoo</span>, founding executive of <span className="text-primary font-semibold">Singularity University</span>, current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">XPRIZE</a>, proven across <span className="text-primary font-semibold">300+ Fortune 500 engagements</span> delivering top quantile outcomes.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20">
-              <CardContent className="pt-8 pb-8">
-                <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                  <a href="https://salimismail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Salim Ismail</a>, former head of innovation at <span className="text-primary font-semibold">Yahoo</span>, founding executive of <span className="text-primary font-semibold">Singularity University</span>, current board member at <a href="https://xprize.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">XPRIZE</a>, and bestselling author of <span className="font-semibold text-foreground">Exponential Organizations</span>.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="relative group p-6 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 border border-cyan-500/30 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105">
+                <div className="text-4xl font-black bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">3x</div>
+                <div className="text-sm text-muted-foreground mt-1">Better Revenue Growth</div>
+              </div>
+              <div className="relative group p-6 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 border border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:scale-105">
+                <div className="text-4xl font-black bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">6.8x</div>
+                <div className="text-sm text-muted-foreground mt-1">Greater Profitability</div>
+              </div>
+              <div className="relative group p-6 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 hover:scale-105">
+                <div className="text-4xl font-black bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">40x</div>
+                <div className="text-sm text-muted-foreground mt-1">Higher Shareholder Returns</div>
+              </div>
+              <div className="relative group p-6 rounded-2xl bg-gradient-to-br from-pink-500/20 to-pink-500/5 border border-pink-500/30 hover:border-pink-400/50 transition-all duration-300 hover:scale-105">
+                <div className="text-4xl font-black bg-gradient-to-r from-pink-400 to-cyan-500 bg-clip-text text-transparent">11.7x</div>
+                <div className="text-sm text-muted-foreground mt-1">Higher Asset Utilization</div>
+              </div>
+            </div>
+
+          
           </div>
         </div>
       </section>
@@ -223,13 +226,13 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Ecosystem</h2>
             <p className="text-muted-foreground text-lg mb-8">Building a comprehensive platform for exponential transformation</p>
             <a
-              href="https://openexo.com"
+              href="https://openexo.com/community"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 hover:bg-primary/20 rounded-lg text-primary font-medium transition-colors"
             >
               OpenExO Community
-              <span className="text-xs opacity-70">openexo.com</span>
+              <span className="text-xs opacity-70">openexo.com/community</span>
             </a>
           </div>
         </div>
