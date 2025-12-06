@@ -13,9 +13,7 @@ export default function AIHub() {
           <div className="flex items-center justify-between h-16">
             <Link href="/">
               <a className="cursor-pointer">
-                <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                  EXORAX
-                </span>
+                <img src="/assets/EXORAX_logo.png" alt="EXORAX" className="h-8 w-auto" />
               </a>
             </Link>
             <div className="hidden md:flex items-center gap-8">
@@ -48,11 +46,11 @@ export default function AIHub() {
               AI Operations
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Accelerate, scale, and secure your AI innovation and operations. End-to-end platform for the entire AI lifecycle—from data ingestion to production deployment.
+              Accelerate, scale, and secure your AI innovation and operations. Enterprise AI operating system for the entire AI lifecycle—from data ingestion to production deployment and outcome optimization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
-                <a href="mailto:info@exorax.com">Request Demo</a>
+                <a href="mailto:info@exorax.com">Find Your Use Cases</a>
               </Button>
               <Button size="lg" variant="outline" className="text-base px-8" asChild>
                 
@@ -156,100 +154,6 @@ export default function AIHub() {
             animation-play-state: paused;
           }
         `}</style>
-      </section>
-
-      {/* Executive Summary */}
-      <section className="py-20 bg-card/50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Empowering Enterprise AI</h2>
-            <p className="text-lg text-muted-foreground text-center mb-12">
-              An integrated AI Operating System designed to address critical challenges enterprises face in deploying and managing AI initiatives at scale.
-            </p>
-
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border-cyan-500/20">
-              <CardContent className="pt-6">
-                <p className="text-muted-foreground mb-4">
-                  By offering a unified solution for the entire machine learning lifecycle, EXORAX Enterprise AI Solutions enables organizations to accelerate innovation, ensure security, and optimize operational efficiency.
-                </p>
-
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Statement */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">AI Deployment Challenges</h2>
-              <p className="text-muted-foreground text-lg">Critical obstacles preventing AI projects from reaching production</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_networkConnection.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Fragmented Toolchains</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Enterprises encounter significant obstacles operationalizing AI, including disconnected tools and complex integration challenges.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_shield.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">Security & Governance</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Security vulnerabilities and insufficient governance create compliance risks and operational uncertainty.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <img src="/assets/icon_arrows.png" alt="" className="w-12 h-12" />
-                  </div>
-                  <CardTitle className="text-lg">High Failure Rates</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Over 70% of AI initiatives fail to transition from pilot to production due to infrastructure complexity and lack of scalability.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20">
-              <CardHeader>
-                <CardTitle className="text-2xl">The Cost of Failure</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-start gap-4">
-                  <div className="text-5xl font-bold text-primary">$50B+</div>
-                  <div>
-                    <div className="font-semibold mb-2">Annual Global Cost of Failed AI Projects</div>
-                    <p className="text-sm text-muted-foreground">
-                      Underscoring the urgent need for reliable, scalable AI platforms that ensure AI initiatives deliver measurable business value.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
       </section>
 
       {/* Platform Features */}
@@ -603,9 +507,7 @@ export default function AIHub() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
                 <div className="mb-4">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                    EXORAX
-                  </span>
+                  <img src="/assets/EXORAX_logo.png" alt="EXORAX" className="h-8 w-auto" />
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
                   EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.

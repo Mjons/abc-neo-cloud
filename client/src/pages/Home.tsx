@@ -13,9 +13,7 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <Link href="/">
               <a className="cursor-pointer">
-                <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                  EXORAX
-                </span>
+                <img src="/assets/EXORAX_logo.png" alt="EXORAX" className="h-8 w-auto" />
               </a>
             </Link>
             <div className="hidden md:flex items-center gap-8">
@@ -56,16 +54,16 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                AI Neocloud Platform
+                Neocloud AI Platform
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Powering the next generation of AI innovation with purpose-built infrastructure, flexible GPU compute, and enterprise-grade platform services. We re-purpose the Existing Power Infrastructure ("EPI"), including buildings, substations, transformers et al.
+              We re-purpose the Existing Power Infrastructure ("EPI") for AI acceleration with decentralized infrastructure, flexible GPU compute, and enterprise SLAs for Hyperscalers and enterprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
-                <a href="#platform">
-                  Schedule a Call <ArrowRight className="ml-2 w-5 h-5" />
+                <a href="#contact">
+                  Check Your EXORAX IQ <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-base px-8" asChild>
@@ -104,8 +102,8 @@ export default function Home() {
         </div>
 
         {/* Scrolling logos container */}
-        <div className="relative">
-          <div className="flex animate-scroll">
+        <div className="relative md:overflow-hidden overflow-x-auto scrollbar-hide touch-pan-x">
+          <div className="flex animate-scroll md:animate-scroll animate-scroll-mobile">
             {/* First set of logos */}
             <div className="flex items-center gap-16 px-8 flex-shrink-0">
               <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-28 w-56 hover:shadow-md transition-shadow">
@@ -185,6 +183,22 @@ export default function Home() {
 
           .animate-scroll:hover {
             animation-play-state: paused;
+          }
+
+          /* Mobile: faster animation and allow swipe */
+          @media (max-width: 767px) {
+            .animate-scroll-mobile {
+              animation: scroll 15s linear infinite;
+            }
+          }
+
+          /* Hide scrollbar but keep functionality */
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
           }
         `}</style>
       </section>
@@ -356,6 +370,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Get in Touch */}
+      <section id="contact" className="py-20 bg-gradient-to-br from-cyan-500/5 via-background to-purple-500/5">
+        <div className="container">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+              <p className="text-muted-foreground text-lg">Ready to accelerate your AI infrastructure? Let's talk.</p>
+            </div>
+
+            <Card className="bg-card/50 backdrop-blur border-border">
+              <CardContent className="pt-8 pb-8">
+                <form className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium text-foreground">Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground placeholder:text-muted-foreground"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-medium text-foreground">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@company.com"
+                        className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground placeholder:text-muted-foreground"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="company" className="text-sm font-medium text-foreground">Company</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      placeholder="Your company name"
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground placeholder:text-muted-foreground"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium text-foreground">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      placeholder="Tell us about your AI infrastructure needs..."
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground placeholder:text-muted-foreground resize-none"
+                    />
+                  </div>
+                  <Button type="submit" size="lg" className="w-full">
+                    Send Message <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 border-t border-border bg-card/30">
         <div className="container">
@@ -363,9 +441,7 @@ export default function Home() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
                 <div className="mb-4">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                    EXORAX
-                  </span>
+                  <img src="/assets/EXORAX_logo.png" alt="EXORAX" className="h-8 w-auto" />
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
                   EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.

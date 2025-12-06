@@ -13,9 +13,7 @@ export default function GPUaaS() {
           <div className="flex items-center justify-between h-16">
             <Link href="/">
               <a className="cursor-pointer">
-                <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                  EXORAX
-                </span>
+                <img src="/assets/EXORAX_logo.png" alt="EXORAX" className="h-8 w-auto" />
               </a>
             </Link>
             <div className="hidden md:flex items-center gap-8">
@@ -392,9 +390,7 @@ export default function GPUaaS() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="col-span-2">
                 <div className="mb-4">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                    EXORAX
-                  </span>
+                  <img src="/assets/EXORAX_logo.png" alt="EXORAX" className="h-8 w-auto" />
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
                   EXORAX AI is a leading neocloud provider exiting stealth mode, enabling enterprises worldwide to meet the compute-intensive demands of modern AI workloads, to secure institutional knowledge and to optimize AI outcomes.
