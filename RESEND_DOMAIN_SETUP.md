@@ -85,10 +85,38 @@ After adding the domain, Resend will show you 3 DNS records to add:
    - **Proxy status**: DNS only (grey cloud)
    - Click **Save**
 
-**If using another DNS provider:**
-- Namecheap, GoDaddy, etc. - similar process
+**If using GoDaddy:**
+1. Log in to GoDaddy account
+2. Click **username** (top right) → **"My Products"**
+3. Find `exorax.ai` → Click **three dots (...)** → **"Manage DNS"**
+4. In the **Records** section, click **"Add"** button
+5. For each record:
+   - **SPF Record:**
+     - Type: **TXT**
+     - Name: **`@`** (root domain)
+     - Value: `v=spf1 include:amazonses.com ~all`
+     - TTL: **1 Hour** (default)
+   - **DKIM Record:**
+     - Type: **TXT**
+     - Name: **`resend._domainkey`**
+     - Value: (copy LONG string from Resend dashboard)
+     - TTL: **1 Hour**
+   - **DMARC Record:**
+     - Type: **TXT**
+     - Name: **`_dmarc`**
+     - Value: `v=DMARC1; p=none; rua=mailto:dmarc@exorax.ai`
+     - TTL: **1 Hour**
+6. Click **"Save"** after each record
+
+**Important for GoDaddy:**
+- Make sure to copy the FULL DKIM value (200+ characters)
+- No extra spaces before or after values
+- DNS propagation can take 10-15 minutes
+
+**If using Namecheap or other DNS provider:**
 - Look for "DNS Management" or "Advanced DNS"
 - Add TXT records as shown by Resend
+- Similar process to GoDaddy
 
 ### Step 5: Verify Domain
 

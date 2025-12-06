@@ -160,15 +160,11 @@ export default function ExoRaxIQAssessment() {
   // Supabase submission hook
   const submitAssessment = useSubmitExoRaxIQAssessment();
 
-  // Email sending state
-  const [emailStatus, setEmailStatus] = useState({
-    sending: false,
-    sent: false,
-    error: null
-  });
-
   // Start assessment state (for capturing info upfront)
   const [startingAssessment, setStartingAssessment] = useState(false);
+
+  // PDF download state
+  const [downloadingPDF, setDownloadingPDF] = useState(false);
 
   const handleRating = (categoryId, value) => {
     setRatings(prev => ({ ...prev, [categoryId]: value }));
@@ -310,9 +306,9 @@ export default function ExoRaxIQAssessment() {
     );
   };
 
-  // Handler to email assessment results as PDF
-  const handleEmailResults = async () => {
-    setEmailStatus({ sending: true, sent: false, error: null });
+  // Handler to download assessment results as PDF
+  const handleDownloadPDF = () => {
+    setDownloadingPDF(true);
 
     try {
       // Generate PDF from assessment data
@@ -323,79 +319,26 @@ export default function ExoRaxIQAssessment() {
         quadrant
       });
 
-      // Check if we're in development mode
-      const isDevelopment = import.meta.env.DEV;
+      // Create download link
+      const url = URL.createObjectURL(pdfBlob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `EXORAX_IQ_Assessment_${facilityInfo.name.replace(/\s+/g, '_')}.pdf`;
 
-      if (isDevelopment) {
-        // DEVELOPMENT MODE: Mock email sending
-        // API routes don't work in Vite dev server (only work on Vercel)
-        // Simulate delay and show success message for testing
-        console.log('📧 [DEV MODE] Email would be sent to:', facilityInfo.email);
-        console.log('📄 [DEV MODE] PDF generated successfully:', pdfBlob.size, 'bytes');
+      // Trigger download
+      document.body.appendChild(link);
+      link.click();
 
-        // Simulate API delay
-        await new Promise(resolve => setTimeout(resolve, 1000));
+      // Cleanup
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
 
-        setEmailStatus({ sending: false, sent: true, error: null });
-
-        // Show dev mode notice in console
-        console.log('✅ [DEV MODE] Email mocked successfully. In production, this will send a real email via Resend.');
-
-      } else {
-        // PRODUCTION MODE: Actually send email via Vercel serverless function
-
-        // Convert blob to base64 for API transmission
-        const reader = new FileReader();
-        const pdfBase64 = await new Promise((resolve, reject) => {
-          reader.onloadend = () => {
-            const base64String = reader.result.split(',')[1];
-            resolve(base64String);
-          };
-          reader.onerror = reject;
-          reader.readAsDataURL(pdfBlob);
-        });
-
-        // Call serverless function to send email
-        const response = await fetch('/api/send-assessment', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            email: facilityInfo.email,
-            pdfBase64,
-            facilityName: facilityInfo.name,
-            score: Math.round(scores.overall),
-            quadrant: quadrant.label
-          }),
-        });
-
-        const data = await response.json();
-
-        if (!response.ok) {
-          throw new Error(data.error || 'Failed to send email');
-        }
-
-        setEmailStatus({ sending: false, sent: true, error: null });
-      }
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setEmailStatus(prev => ({ ...prev, sent: false }));
-      }, 5000);
-
+      console.log('✅ PDF downloaded successfully:', pdfBlob.size, 'bytes');
     } catch (error) {
-      console.error('Email error:', error);
-      setEmailStatus({
-        sending: false,
-        sent: false,
-        error: error.message || 'Failed to send email. Please try again.'
-      });
-
-      // Reset error message after 8 seconds
-      setTimeout(() => {
-        setEmailStatus(prev => ({ ...prev, error: null }));
-      }, 8000);
+      console.error('PDF download error:', error);
+      alert('Failed to download PDF. Please try again.');
+    } finally {
+      setDownloadingPDF(false);
     }
   };
 
@@ -749,35 +692,19 @@ export default function ExoRaxIQAssessment() {
         <div className="mt-4 bg-gradient-to-r from-emerald-900/40 to-emerald-800/20 rounded-2xl p-5 border border-emerald-800/50">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex-1">
-              <h3 className="text-base font-semibold">Ready to deploy AI workloads?</h3>
-              <p className="text-sm text-slate-400">Our team can help you optimize your existing power infrastructure.</p>
-
-              {/* Status messages */}
-              {emailStatus.sent && (
-                <div className="mt-3 p-2 bg-emerald-500/20 border border-emerald-500/50 rounded-lg">
-                  <p className="text-xs text-emerald-300">
-                    ✓ Results sent to {facilityInfo.email}
-                  </p>
-                </div>
-              )}
-              {emailStatus.error && (
-                <div className="mt-3 p-2 bg-red-500/20 border border-red-500/50 rounded-lg">
-                  <p className="text-xs text-red-300">
-                    ✗ {emailStatus.error}
-                  </p>
-                </div>
-              )}
+              <h3 className="text-base font-semibold">Download Your Assessment Report</h3>
+              <p className="text-sm text-slate-400">Get a detailed PDF report of your facility's readiness analysis.</p>
             </div>
             <button
-              onClick={handleEmailResults}
-              disabled={emailStatus.sending}
+              onClick={handleDownloadPDF}
+              disabled={downloadingPDF}
               className={`px-5 py-2.5 rounded-lg font-medium whitespace-nowrap transition-colors text-sm ${
-                emailStatus.sending
+                downloadingPDF
                   ? 'bg-emerald-700 text-slate-400 cursor-not-allowed'
                   : 'bg-emerald-600 hover:bg-emerald-500'
               }`}
             >
-              {emailStatus.sending ? 'Sending...' : 'Email My Results'}
+              {downloadingPDF ? 'Generating...' : '📄 Download PDF'}
             </button>
           </div>
         </div>
