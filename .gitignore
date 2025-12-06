@@ -108,3 +108,5 @@ temp/
 .vercel
 
 CLAUDE.md
+# Ignore the original ExoRaxIQ standalone project folder (not the integration files)
+/ExoRaxIQ/
