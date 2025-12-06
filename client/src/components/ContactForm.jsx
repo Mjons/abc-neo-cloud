@@ -14,15 +14,15 @@ import {
 } from "@/components/ui/form";
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { contactFormSchema, type ContactFormData } from "@/lib/validations";
+import { contactFormSchema } from "@/lib/validations";
 import { useContactForm } from "@/hooks/useContactForm";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 
 export function ContactForm() {
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error" | "duplicate">("idle");
+  const [submitStatus, setSubmitStatus] = useState("idle");
   const { mutate, isPending } = useContactForm();
 
-  const form = useForm<ContactFormData>({
+  const form = useForm({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       email: "",
@@ -30,14 +30,14 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = (data: ContactFormData) => {
+  const onSubmit = (data) => {
     setSubmitStatus("idle");
     mutate(data, {
       onSuccess: () => {
         form.reset();
         setSubmitStatus("success");
       },
-      onError: (error: Error) => {
+      onError: (error) => {
         if (error.message === "DUPLICATE_EMAIL") {
           setSubmitStatus("duplicate");
         } else {
@@ -161,3 +161,4 @@ export function ContactForm() {
     </Card>
   );
 }
+

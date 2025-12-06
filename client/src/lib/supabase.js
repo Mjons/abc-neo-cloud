@@ -11,10 +11,3 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-// Type definitions for our database tables
-export type ContactSubmission = {
-  id: string;
-  email: string;
-  message: string;
-  created_at: string;
-};

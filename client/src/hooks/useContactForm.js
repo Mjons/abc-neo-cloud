@@ -1,10 +1,9 @@
 import { useMutation } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase";
-import type { ContactFormData } from "@/lib/validations";
 
 export function useContactForm() {
   return useMutation({
-    mutationFn: async (data: ContactFormData) => {
+    mutationFn: async (data) => {
       const { error } = await supabase
         .from("contact_submissions")
         .insert({
@@ -24,3 +23,4 @@ export function useContactForm() {
     },
   });
 }
+
