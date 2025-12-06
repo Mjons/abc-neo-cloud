@@ -43,10 +43,7 @@ export default async function handler(req, res) {
 
     // Send email with PDF attachment
     const { data, error } = await resend.emails.send({
-      // For testing: Use Resend's test domain (no verification needed)
-      from: 'EXORAX IQ <onboarding@resend.dev>',
-      // For production: Verify your domain at https://resend.com/domains first, then use:
-      // from: 'EXORAX IQ <noreply@exorax.com>',
+      from: 'EXORAX IQ <noreply@exorax.ai>',
       to: [email],
       subject: `Your EXORAX IQ Assessment Results - ${facilityName}`,
       html: `

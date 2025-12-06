@@ -1,10 +1,26 @@
 # Email API Fix Guide
 
+## 🚨 CRITICAL DISCOVERY
+
+**The 500 error is just ONE of TWO issues blocking email delivery:**
+
+1. ✅ **FIXED**: `vercel.json` rewrite rule was blocking API routes
+2. ⚠️ **ACTION REQUIRED**: Domain verification needed for production email sending
+
 ## Problem
 Getting 500 Internal Server Error when trying to send assessment results via email.
 
-## Root Cause
+## Root Causes
+
+### Issue #1: API Route Not Reachable (FIXED)
 The `vercel.json` rewrite rule was catching ALL requests (including `/api/*` routes) and sending them to `index.html`, preventing the serverless function from being reached.
+
+### Issue #2: Domain Verification Required (ACTION NEEDED)
+Your code uses `from: 'onboarding@resend.dev'` which **only works for development testing to YOUR OWN email**. According to official Resend documentation, you CANNOT send to customer emails from `onboarding@resend.dev`.
+
+**You MUST verify your domain before emails will work in production.**
+
+👉 **See [RESEND_DOMAIN_SETUP.md](./RESEND_DOMAIN_SETUP.md) for complete setup instructions.**
 
 ## What Was Fixed
 
@@ -115,36 +131,60 @@ Vercel will automatically deploy when you push to your main branch.
    - See if email was sent successfully
    - Check delivery status
 
-### Want to use custom domain for emails?
+### ⚠️ IMPORTANT: Custom Domain Required for Production
 
-Currently using: `onboarding@resend.dev` (Resend's test domain - no verification needed)
+**Current limitation:** Using `onboarding@resend.dev` which:
+- ❌ Only works for sending to YOUR OWN Resend account email
+- ❌ Cannot send to customer/user emails
+- ❌ Will fail in production
 
-To use your own domain (e.g., `noreply@exorax.ai`):
+**Official Resend Team (GitHub #454):**
+> "for development you can send emails from `onboarding@resend.dev` but **to your own email only**, if you try sending from `resend.dev` to other emails you'll get an error"
 
+**SOLUTION: Verify your domain** (e.g., `exorax.ai` or `mail.exorax.ai`)
+
+👉 **Follow the complete guide: [RESEND_DOMAIN_SETUP.md](./RESEND_DOMAIN_SETUP.md)**
+
+Quick summary:
 1. Go to [resend.com/domains](https://resend.com/domains)
-2. Click **Add Domain**
-3. Enter `exorax.ai`
-4. Add the DNS records shown (SPF, DKIM, etc.) to your domain's DNS settings
-5. Wait for verification (usually 5-10 minutes)
-6. Update `api/send-assessment.js` line 47:
+2. Add domain: `mail.exorax.ai` (recommended) or `exorax.ai`
+3. Add 3 DNS records (SPF, DKIM, DMARC) to your DNS provider
+4. Wait for verification (5-10 minutes)
+5. Update `api/send-assessment.js` line 47:
    ```javascript
-   from: 'EXORAX IQ <noreply@exorax.ai>',
+   from: 'EXORAX IQ <noreply@mail.exorax.ai>',
    ```
-7. Redeploy
+6. Commit, push, and redeploy
 
 ---
 
-## Verification Checklist
+## Complete Fix Checklist
 
-After deploying the fix:
-
+### Phase 1: Fix API Route (Immediate - 5 minutes)
 - [ ] vercel.json updated with negative lookahead `(?!api)`
 - [ ] RESEND_API_KEY added to Vercel environment variables
-- [ ] Latest deployment shows "Ready" in Vercel dashboard
-- [ ] Tested assessment completion and email sending
-- [ ] Received email with PDF attachment
+- [ ] Changes committed and pushed to GitHub
+- [ ] Vercel deployment completed (shows "Ready")
 - [ ] No 500 errors in browser console
-- [ ] Vercel function logs show successful email sends
+
+### Phase 2: Verify Domain (Required for Production - 15-20 minutes)
+- [ ] Domain added to Resend dashboard (`mail.exorax.ai` or `exorax.ai`)
+- [ ] SPF TXT record added to DNS
+- [ ] DKIM TXT record added to DNS
+- [ ] DMARC TXT record added to DNS (optional but recommended)
+- [ ] Domain shows "Verified" in Resend dashboard
+- [ ] Updated `from` address in `api/send-assessment.js` to verified domain
+- [ ] Code changes committed and deployed
+
+### Phase 3: Production Testing
+- [ ] Completed assessment on production site
+- [ ] Clicked "Email My Results"
+- [ ] Email received successfully (check inbox AND spam folder)
+- [ ] PDF attachment opens correctly
+- [ ] Sender shows as "EXORAX IQ <noreply@mail.exorax.ai>" (or your domain)
+- [ ] Tested with different email providers (Gmail, Outlook, etc.)
+- [ ] Checked Vercel function logs for success messages
+- [ ] Verified in Resend dashboard that email was sent
 
 ---
 
