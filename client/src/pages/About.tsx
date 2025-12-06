@@ -31,7 +31,6 @@ const companyLogos = [
   { name: "VMware", logo: vmwareLogo, url: "https://vmware.com" },
   { name: "Ricoh", logo: ricohLogo, url: "https://ricoh.com" },
   { name: "KeystoneNAP", logo: keystoneNapLogo, url: "https://www.keystonenap.com" },
-  { name: "FatBrain", logo: fatbrainLogo, url: "https://fatbrain.ai" },
 ];
 
 export default function About() {
@@ -104,17 +103,33 @@ export default function About() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Leadership</h2>
-              <p className="text-muted-foreground text-lg">Exponential Organizations methodology powering enterprise transformation</p>
+              <p className="text-muted-foreground text-lg">Executives with multiple <span className="text-primary font-semibold">8-11 figure outcomes</span></p>
+            </div>
+
+            {/* Company Logos Grid */}
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center mb-8">
+              {companyLogos.map((company) => (
+                <a
+                  key={company.name}
+                  href={company.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center p-4 bg-white/5 rounded-xl h-24 w-full hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="max-h-14 max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </a>
+              ))}
             </div>
 
             {/* ExO Company Overview */}
             <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 mb-8">
               <CardContent className="pt-8 pb-8">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  <span className="text-primary font-bold">Exponential Organizations Inc.</span> ("ExO") is a leading edge <span className="text-primary font-semibold">neocloud provider</span> enabling enterprises worldwide to <span className="font-semibold text-foreground">secure institutional knowledge</span> and <span className="font-semibold text-foreground">optimize AI outcomes</span>.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Led by executives with multiple <span className="text-primary font-bold">8-11 figure outcomes</span> and supported by <span className="text-primary font-bold">500+ engineers</span> plus <span className="text-primary font-bold">40,000 domain expert</span> community, ExO builds upon successes of its eponymous <span className="font-semibold text-foreground">1M+ bestseller</span> with proprietary IP for:
+                  With a proven track record of building successful technology companies, backed by <span className="text-primary font-bold">500+ engineers</span> and a <span className="text-primary font-bold">40,000 domain expert</span> community, our organizational IP builds upon the <span className="font-semibold text-foreground">1M+ bestselling book Exponential Organizations</span> with IP methodologies delivering:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                   <div className="text-center">
@@ -147,35 +162,6 @@ export default function About() {
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Founded or Led Companies */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Founded or Led</h2>
-              <p className="text-muted-foreground text-lg">Track record of building successful technology companies</p>
-            </div>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center">
-              {companyLogos.map((company) => (
-                <a
-                  key={company.name}
-                  href={company.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center p-4 bg-white/5 rounded-xl h-24 w-full hover:bg-white/10 transition-colors cursor-pointer"
-                >
-                  <img
-                    src={company.logo}
-                    alt={company.name}
-                    className="max-h-14 max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </section>
