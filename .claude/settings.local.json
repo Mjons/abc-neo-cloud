@@ -9,7 +9,10 @@
       "WebFetch(domain:supabase.com)",
       "Bash(pnpm add:*)",
       "Bash(npx vercel whoami)",
-      "Bash(npx vercel:*)"
+      "Bash(npx vercel:*)",
+      "Bash(find:*)",
+      "Bash(ren:*)",
+      "Bash(del *.tsx)"
     ],
     "deny": [],
     "ask": []
