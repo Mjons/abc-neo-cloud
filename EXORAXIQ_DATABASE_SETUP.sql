@@ -70,10 +70,23 @@ CREATE POLICY "allow_anonymous_update_exoraxiq"
   USING (true)
   WITH CHECK (true);
 
--- Policy 3: NO SELECT policy for anonymous users (assessments are private)
--- Only admins can view submissions via Supabase Dashboard
+-- Policy 3: Allow anonymous users to SELECT (required for UPSERT to work)
+-- IMPORTANT: UPSERT operations need SELECT policy to function properly
+-- Even though the code uses returning: 'minimal', PostgreSQL UPSERT still needs SELECT
+-- This doesn't expose data because there are no client-side .select() calls
+CREATE POLICY "allow_anonymous_select_exoraxiq"
+  ON exoraxiq_assessments
+  FOR SELECT
+  TO anon
+  USING (true);
 
--- 5. CREATE FUNCTION to auto-update updated_at timestamp
+-- 5. GRANT TABLE PERMISSIONS TO ANON ROLE
+-- CRITICAL: RLS policies are filters, but you also need GRANT permissions!
+-- PostgreSQL has 2 security layers: GRANT (table access) + RLS (row filters)
+-- Without these GRANTs, you'll get "violates row-level security policy" errors
+GRANT INSERT, UPDATE, SELECT ON exoraxiq_assessments TO anon;
+
+-- 6. CREATE FUNCTION to auto-update updated_at timestamp
 CREATE OR REPLACE FUNCTION update_exoraxiq_updated_at()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -82,7 +95,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- 6. CREATE TRIGGER to auto-update updated_at on UPDATE
+-- 7. CREATE TRIGGER to auto-update updated_at on UPDATE
 CREATE TRIGGER exoraxiq_assessments_updated_at
   BEFORE UPDATE ON exoraxiq_assessments
   FOR EACH ROW

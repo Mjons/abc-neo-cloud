@@ -2,9 +2,21 @@
 
 ## What I Fixed
 
-✅ **RLS 401 Error** - Created clean SQL fix script
+✅ **RLS 401 Error** - Created clean SQL fix script with SELECT policy + GRANT permissions
 ✅ **API 404 Error** - Added dev/production email handling
 ✅ **Logo Error** - Added VITE_APP_LOGO to .env.example
+
+### 🔑 Key Learning: UPSERT + RLS Requirements
+
+**UPSERT operations need 3 things to work with RLS:**
+1. ✅ INSERT policy
+2. ✅ UPDATE policy
+3. ✅ **SELECT policy** (UPSERT checks if row exists first!)
+
+**PLUS you also need GRANT permissions:**
+- PostgreSQL has 2 security layers: GRANT (table access) + RLS (row filters)
+- Even with perfect RLS policies, you'll get errors without GRANT permissions
+- Fix: `GRANT INSERT, UPDATE, SELECT ON table_name TO anon;`
 
 ---
 
@@ -45,6 +57,16 @@ CREATE POLICY "allow_anonymous_update_exoraxiq"
   USING (true)
   WITH CHECK (true);
 
+-- 5. CREATE SELECT policy (required for UPSERT to work)
+CREATE POLICY "allow_anonymous_select_exoraxiq"
+  ON exoraxiq_assessments
+  FOR SELECT
+  TO anon
+  USING (true);
+
+-- 6. GRANT table permissions (CRITICAL!)
+GRANT INSERT, UPDATE, SELECT ON exoraxiq_assessments TO anon;
+
 -- VERIFICATION
 SELECT policyname, cmd, roles
 FROM pg_policies
@@ -53,9 +75,10 @@ WHERE tablename = 'exoraxiq_assessments';
 
 3. Click **Run**
 
-4. You should see **2 policies** in the results:
+4. You should see **3 policies** in the results:
    - `allow_anonymous_insert_exoraxiq` (INSERT)
    - `allow_anonymous_update_exoraxiq` (UPDATE)
+   - `allow_anonymous_select_exoraxiq` (SELECT)
 
 ---
 
@@ -183,10 +206,19 @@ if (isDevelopment) {
 SELECT * FROM pg_policies WHERE tablename = 'exoraxiq_assessments';
 ```
 
-Should see 2 rows. If not:
+Should see **3 rows** (INSERT, UPDATE, SELECT). If not:
 1. Make sure you ran the SQL in the correct Supabase project
 2. Check for error messages in SQL Editor output
 3. Try running the SQL script again
+
+**Also check** if GRANT permissions were added:
+```sql
+SELECT grantee, privilege_type
+FROM information_schema.role_table_grants
+WHERE table_name = 'exoraxiq_assessments' AND grantee = 'anon';
+```
+
+Should see **3 grants** (INSERT, UPDATE, SELECT) for anon role.
 
 ### Logo still showing %VITE_APP_LOGO%?
 

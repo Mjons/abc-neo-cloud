@@ -167,8 +167,46 @@ export default function ExoRaxIQAssessment() {
     error: null
   });
 
+  // Start assessment state (for capturing info upfront)
+  const [startingAssessment, setStartingAssessment] = useState(false);
+
   const handleRating = (categoryId, value) => {
     setRatings(prev => ({ ...prev, [categoryId]: value }));
+  };
+
+  // Handler to capture facility info when starting assessment
+  const handleStartAssessment = async () => {
+    setStartingAssessment(true);
+
+    try {
+      // Submit initial facility info to database before assessment starts
+      await submitAssessment.mutateAsync({
+        facilityInfo,
+        ratings: {}, // Empty ratings - they haven't started yet
+        scores: {
+          overall: 0,
+          readiness: 0,
+          scalability: 0,
+          operational: 0
+        },
+        quadrant: {
+          label: 'In Progress',
+          color: '#6b7280',
+          description: 'Assessment started but not completed',
+          action: 'Complete assessment to see results'
+        }
+      });
+
+      // Successfully saved, proceed to assessment
+      setStep('assessment');
+    } catch (error) {
+      console.error('Failed to save initial info:', error);
+      // Proceed to assessment anyway (offline-first)
+      // They can still complete the assessment, it will save at the end
+      setStep('assessment');
+    } finally {
+      setStartingAssessment(false);
+    }
   };
 
   const calculateScores = () => {
@@ -446,11 +484,11 @@ export default function ExoRaxIQAssessment() {
             </div>
 
             <button
-              onClick={() => setStep('assessment')}
-              disabled={!facilityInfo.name || !facilityInfo.email || !facilityInfo.contactName}
+              onClick={handleStartAssessment}
+              disabled={!facilityInfo.name || !facilityInfo.email || !facilityInfo.contactName || startingAssessment}
               className="w-full py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 disabled:bg-slate-700 disabled:text-slate-500 disabled:cursor-not-allowed font-medium transition-colors text-sm"
             >
-              Start Assessment →
+              {startingAssessment ? 'Saving your info...' : 'Start Assessment →'}
             </button>
 
             <p className="text-xs text-slate-500 mt-4 text-center">
